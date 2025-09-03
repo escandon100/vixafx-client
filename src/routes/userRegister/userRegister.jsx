@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './userRegister.scss';
 import countries from "../../lib/countries";
 import { Eye, EyeOff } from "lucide-react";
+import './userRegister.scss';
+
 
 const UserRegister = () => {
   const [form, setForm] = useState({
@@ -22,7 +23,7 @@ const UserRegister = () => {
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // clear error as user types
+    setErrors({ ...errors, [e.target.name]: "" }); 
   };
 
   const validateForm = () => {
@@ -84,9 +85,9 @@ const UserRegister = () => {
   return (
     <div className='userRegister'>
       <div className="register-card">
-        <img src='logo.png' alt='Trader Base Logo' className="logo"/>
+        <Link to="/"><img src='logo.png' className="logo"/></Link>
         <h1>Create an Account</h1>
-        <p className="subtitle">Join Trader Base FX and start your investment journey today</p>
+        <p className="subtitle">Join Vixa FX and start your investment journey today</p>
 
         <form onSubmit={handleSubmit} noValidate>
           <div className='names'>
@@ -150,7 +151,7 @@ const UserRegister = () => {
         <p className="login-text">
           Already have an account? <Link to='/userLogin'>Login</Link>
         </p>
-        <p className="footer">© 2025 Trader Base FX. All Rights Reserved.</p>
+        <p className="footer">© 2025 Vixa FX. All Rights Reserved.</p>
       </div>
     </div>
   );

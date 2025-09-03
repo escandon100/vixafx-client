@@ -30,7 +30,7 @@ const Forex = () => {
             </p>
             <p>
                 Today, exchanging money sets is accessible to everyone(there used to be confinement, and just organizations with substantial capital were permitted to exchange). 
-                To open an exchange, traders, for example,eqtradesare ready to help. The Forex specialist gives a stage on which you can open and screen exchanges.
+                To open an exchange, traders, for example, Vixa Fx are ready to help. The Forex specialist gives a stage on which you can open and screen exchanges.
             </p>
             <p>
                 It would be ideal if you note that the organization may change its medium-term rollover rates occasionally because of changes in credit markets.

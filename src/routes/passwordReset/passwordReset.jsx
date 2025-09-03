@@ -1,30 +1,40 @@
 import React from "react";
 import "./passwordReset.scss";
-import { Link } from "react-router";
-
-
-
+import { Link } from "react-router-dom";
 
 const PasswordReset = () => {
-    return (
-        <div className="passwordReset">
-            <form action="">
-                  <h1>Password reset</h1>
-                <h3>Email address</h3>
-                <p>The email Address used in registration </p>
-                  <input placeholder="name@example.com" type="email" name="" id="" />
-                  <button type="submit">Send Reset Link </button>
-                <Link className="loginButton"  to="/login">Repeat Login</Link>
-                <p>© Copyright 2025   Trader Base FX</p>
-                <p>All Rights Reserved.</p>
+  return (
+    <div className="passwordReset">
+      <div className="reset-card">
+        <h1 className="title">Password Reset</h1>
+        <p className="subtitle">
+          Enter the email address you used during registration and we’ll send you
+          a reset link.
+        </p>
 
-            </form>
+        <form>
+          <div className="inputGroup">
+            <label>Email address</label>
+            <input
+              placeholder="name@example.com"
+              type="email"
+              required
+            />
+          </div>
 
-          
+          <button type="submit" className="resetBtn">
+            Send Reset Link
+          </button>
 
-        </div>
-    )
-}
+          <Link className="loginLink" to="/userLogin">
+            Back to Login
+          </Link>
+        </form>
 
+        <footer>© 2025 Vixa Fx. All Rights Reserved.</footer>
+      </div>
+    </div>
+  );
+};
 
-export default PasswordReset
+export default PasswordReset;

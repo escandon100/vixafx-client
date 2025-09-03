@@ -24,10 +24,10 @@ const Verification = () => {
                     </li>
                     <li>CREDIT CARD
                         <p>In the event that you make a store utilizing a charge card, it would be ideal if you send a sweep/photograph, of the front and back of the card. For your security, it's encouraged to cover the card number (it would be ideal if you make a point to keep the last 4 digits unmistakable), the termination date of the Visa and the CVV number on the back.</p>
-                        <p>Documents can be emailed to: [support@traderbasefx.com ] Documents may also be uploaded in the Upload tab on Settings section of the account dashboard.</p>
+                        <p>Documents can be emailed to: [support@vixafx.com ] Documents may also be uploaded in the Upload tab on Settings section of the account dashboard.</p>
                     </li>
                 </ol>
-                <p>Please note thateqtradesmay require additional forms and documentation to complete the application process.</p>
+                <p>Please note that Vixa FX may require additional forms and documentation to complete the application process.</p>
 
             </div>
            <div className="side">

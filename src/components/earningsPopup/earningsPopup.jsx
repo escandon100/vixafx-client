@@ -24,7 +24,7 @@ const EarningsPopup = () => {
       const country = user.location.country.toUpperCase();
       const amount = getRandomAmount();
 
-      setMessage(`${name} from ${country} has just Earned ${amount}`);
+      setMessage(`${name} from ${country} has just earned ${amount}`);
       setShow(true);
 
       setTimeout(() => setShow(false), 8000);

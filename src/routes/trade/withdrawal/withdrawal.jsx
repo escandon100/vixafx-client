@@ -14,7 +14,7 @@ const Withdrawal = () => {
             <div className='withdrawal'>
                 <div className="main">
                     <h1>WITHDRAWAL INFORMATION AND GENERAL FEES</h1>
-                    <p>Deposit funds to youreqtradesTrading account using one of our convenient options below. 
+                    <p>Deposit funds to your Vixa Fx Trading account using one of our convenient options below. 
                         All deposit activity is secure and trackable. 
                         Please contact your Client Services Representative for further assistance or clarification.</p>
 
@@ -92,7 +92,7 @@ const Withdrawal = () => {
                         <p>For further assistance, please contact your <Link className='clientServices'>Client Services Representative.</Link></p>
                         <p><strong>Withdrawal Request Fees</strong></p>
                         <p>To withdraw funds, simply click Withdrawal Request on the dashboard and type the amount you wish to withdraw. 
-                            Once the request has been made,eqtradeswill process the withdrawal within 1 business day.</p>
+                            Once the request has been made, Vixa Fx will process the withdrawal within 1 business day.</p>
                         <table>
                             <thead>
                                 <tr>

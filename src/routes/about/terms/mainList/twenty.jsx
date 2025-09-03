@@ -18,7 +18,7 @@ function Twenty() {
                         <p>◉Address: 31 Beeston Road, Nottingham</p>
                         <p>◉Telephone No: +1 (201) 800-4783</p>
                         <p>◉Fax No: +1 (201) 800-4783</p>
-                        <p>◉Email Address: support@traderbasefx.com</p>
+                        <p>◉Email Address: support@vixafx.com</p>
                         <p>You will notify us of any change of your address for the receipt of notices, instructions and other communications immediately.</p>
                     </ul>
 

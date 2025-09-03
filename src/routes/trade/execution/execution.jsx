@@ -14,7 +14,7 @@ const Execution= () =>{
         <div className="execution">
             <div className="main">
                 <h1>EXECUTION OF ORDERS</h1>
-                <p>Trader base endeavor to give merchants quick execution of requests with costs that are not in a general sense not quite the same as those expressed.
+                <p>Vixa Fx endeavor to give merchants quick execution of requests with costs that are not in a general sense not quite the same as those expressed.
                     Execution of requests is completed in two different ways:</p>
 
                     <ol>

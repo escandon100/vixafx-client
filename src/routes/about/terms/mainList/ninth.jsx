@@ -83,7 +83,7 @@ const Ninth = () => {
                     <p>We may require you to limit the number of open positions which you may have with us at any time and we may in our sole discretion close out any one or more Transactions in order to ensure that such position limits are maintained.</p>
                 </li>
                 <li>TRAILING STOP FUNCTIONALITY IN CASE THAT MT5 TERMINAL IS CLOSED
-                    <p>In the event that the Trader Base FX or DXTrade client terminal is closed, Trailing Stop will not work. This happens as the Trailing Stop works on the client terminal side and in this respect, if the client terminal is closed, only Stop Loss that was placed by Trailing Stop before the closing of the terminal can trigger.</p>
+                    <p>In the event that the Vixa FX or DXTrade client terminal is closed, Trailing Stop will not work. This happens as the Trailing Stop works on the client terminal side and in this respect, if the client terminal is closed, only Stop Loss that was placed by Trailing Stop before the closing of the terminal can trigger.</p>
                 </li>
                 <li>WITHDRAWALS
                     <p>Without prejudice and subject to the terms of this Agreement, all Applicable Regulations and all conditions attaching to any relevant payments made to you under a bonus or rebate scheme operated by us, monies may be withdrawn by you from your Account on 24 hours written notice to us, provided that such monies are not being utilized for margin purposes or have otherwise become owing to us.</p>

@@ -7,7 +7,7 @@ const Third = () => {
             <h2>GENERAL</h2>
             <ol>
                 <li>INFORMATION ABOUT US
-                    <p>We, P24O Ltd. (Trader Base FX”), are authorized and regulated by the US Financial Services Authority (“MFSA”). Our index.phped office is in 168, St. Christopher Street, Valletta, US.</p>
+                    <p>We, P24O Ltd. (Vixa FX”), are authorized and regulated by the US Financial Services Authority (“MFSA”). Our index.phped office is in 168, St. Christopher Street, Valletta, US.</p>
                      <p>MFSA’s office is situated at Notabile Road, Attard, BKR3000, US.</p>
                      <p>P24O is a market maker for CFD and Spot FX Contracts. P24O owns and operates websites, trading platforms and brand names as indicated in its website (http://www.traderbasefx.com ). P24O operates through these websites which allow online trading.</p>
                 </li>
