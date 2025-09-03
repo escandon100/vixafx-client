@@ -1,0 +1,137 @@
+@use "../../../../styles/responsiveness.scss";
+
+.subscription-trade {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+
+  @include responsiveness.small{
+    padding: 50px 20px;
+  }
+
+
+    .no-subscription {
+      text-align: center;
+      font-size: 18px;
+      color: gray;
+      margin: 20px;
+      font-style: italic;
+
+
+      @include responsiveness.small{
+        font-size: 14px;
+      }
+    }
+
+  
+  .trade-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    width: 50%;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
+    @include responsiveness.small{
+      width: 100%;
+      padding: 20px 10px;
+    }
+
+    @include responsiveness.medium{
+      width: 80%;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1e293b;
+      text-align: center;
+
+
+      @include responsiveness.small{
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .trade-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include responsiveness.small{
+        gap: 10px;
+      }
+
+
+  
+      .info-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid #e2e8f0;
+
+        @include responsiveness.small{
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .label {
+          font-weight: 600;
+          color: #475569;
+          font-size: 18px;
+
+          @include responsiveness.small{
+            font-size: 14px;
+          }
+        }
+
+        .value {
+          color: #1e293b;
+          font-size: 16px;
+          font-weight: 500;
+
+          @include responsiveness.small{
+            font-size: 12px;
+          }
+        }
+
+        .status {
+          text-transform: capitalize;
+          font-weight: 600;
+          padding: 10px;
+          border-radius: 8px;
+          font-size: 16px;
+
+          @include responsiveness.small{
+            font-size: 12px;
+            width: min-content;
+          }
+
+          &.active {
+            background: #dcfce7;
+            color: #15803d;
+          }
+
+          &.inactive {
+            background: #fee2e2;
+            color: #b91c1c;
+          }
+        }
+      }
+
+      .info-item:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+

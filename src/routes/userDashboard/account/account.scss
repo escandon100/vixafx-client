@@ -1,0 +1,95 @@
+@use "../../../../styles/responsiveness.scss";
+
+
+.account {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+
+  .account-card {
+    background: #fff;
+    padding: 20px 30px 50px;
+    border-radius: 12px;
+    width: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    @include responsiveness.small{
+      width: 80%;
+      padding: 20px;
+
+    }
+
+    @include responsiveness.medium{
+      width: 80%;
+    }
+
+    
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1e293b;
+      text-align: center;
+
+      @include responsiveness.small{
+        font-size: 20px;
+      }
+    }
+
+    .account-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include responsiveness.small{
+        gap: 10px;
+      }
+
+      .info-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        border-bottom: 1px solid #e2e8f0;
+
+        @include responsiveness.small{
+          flex-direction: column;
+          gap: 20px;
+
+        }
+
+        .label {
+          font-weight: 600;
+          color: #475569;
+          font-size: 18px;
+
+        @include responsiveness.small{
+          font-size: 14px;
+      }
+
+        }
+
+        .value {
+          color: #1e293b;
+          font-size: 18px;
+
+          @include responsiveness.small{
+            font-size: 14px;
+         }
+        }
+      }
+
+      .info-item:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+

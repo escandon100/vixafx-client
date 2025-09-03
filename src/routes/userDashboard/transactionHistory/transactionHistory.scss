@@ -1,0 +1,137 @@
+@use "../../../../styles/responsiveness.scss";
+
+
+
+.transactionHistory {
+  padding: 50px;
+  background: #f8fafc; 
+
+  @include responsiveness.small{
+    padding: 50px 20px;
+  }
+
+
+  .pageTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1f2937; 
+
+    @include responsiveness.small{
+      font-size: 18px;
+    }
+  }
+
+  .tableWrapper {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  }
+
+  .styledTable {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background: #f1f5f9;
+      tr {
+        th {
+          text-align: left;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #374151;
+          border-bottom: 2px solid #e5e7eb;
+
+          @include responsiveness.small{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        transition: background 0.2s;
+
+        &:nth-child(even) {
+          background: #f9fafb;
+        }
+
+        &:hover {
+          background: #eef2ff;
+        }
+
+        td {
+          padding: 15px;
+          font-size: 16px;
+          color: #374151;
+          border-bottom: 1px solid #e5e7eb;
+
+          @include responsiveness.small{
+            padding: 10px;
+            font-size: 10px;
+          }
+        }
+
+
+        .type{
+
+            &.deposit{
+            color: #059669; 
+             font-weight: 600;
+
+            }
+
+             &.withdrawal {
+             color: #dc2626;
+            font-weight: 600;
+            }
+
+            &.profit{
+              color: #059669; 
+              font-weight: 600;
+            }
+            &.bonus{
+              color: #059669; 
+              font-weight: 600;
+            }
+        }
+        .status {
+
+
+            &.success{
+                color: #16a34a;
+                font-weight: 600;
+            }
+
+            &.pending{
+                color: #d97706; 
+                font-weight: 600;
+            }
+            &.failed{
+                 color: #dc2626; // red
+                 font-weight: 600;
+
+            }
+        }
+        
+
+        .noData {
+          text-align: center;
+          padding: 20px;
+          color: #6b7280;
+          font-size: 18px;
+          font-style: italic;
+
+          @include responsiveness.small{
+            font-size: 10px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

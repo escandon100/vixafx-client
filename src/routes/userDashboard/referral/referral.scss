@@ -1,0 +1,157 @@
+@use "../../../../styles/responsiveness.scss";
+
+.refer-users {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  align-items: center;
+
+
+  @include responsiveness.small{
+    padding: 50px 20px;
+  }
+
+  .refer-card,.users-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    width: 50%;
+
+    @include responsiveness.small{
+      width: 80%;
+      padding: 20px 15px;
+    }
+    @include responsiveness.medium{
+      width: 80%;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 10px;
+
+    @include responsiveness.small{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 15px;
+
+    @include responsiveness.small{
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .referral-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #f8fafc;
+      color: #334155;
+      outline: none;
+
+      @include responsiveness.small{
+        font-size: 12px;
+
+      }
+    }
+
+     button {
+          background: #1e90ff;
+          border: none;
+          border-radius: 5px;
+          padding: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: 0.2s;
+
+          @include responsiveness.small{
+            padding: 5px;
+          }
+
+          svg {
+            color: white;
+          }
+
+          &:hover {
+            background: #0d6efd;
+          }
+        }
+  }
+
+  .users-card {
+    .section-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 20px;
+
+      @include responsiveness.small{
+        font-size: 18px;
+      }
+    }
+
+    .referral-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+
+      th,
+      td {
+        padding: 20px;
+        text-align: left;
+        border-bottom: 1px solid #e2e8f0;
+        font-size: 18px;
+
+        @include responsiveness.small{
+            padding: 10px;
+            font-size: 12px;
+        }
+      }
+
+      th {
+        font-weight: 600;
+        color: #475569;
+        background: #f8fafc;
+      
+
+        color: #334155;
+      }
+
+    
+    }
+
+    .no-referrals {
+      text-align: center;
+      color: #64748b;
+      margin-top: 15px;
+      font-size: 16px;
+      font-style: italic;
+
+      @include responsiveness.small{
+        font-size: 12px;
+      }
+    }
+
+    
+  }
+}
