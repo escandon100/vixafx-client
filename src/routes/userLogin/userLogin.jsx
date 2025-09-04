@@ -27,6 +27,7 @@ const UserLogin = () => {
         "https://vixafx-api-1.onrender.com/api/userLogin/send",
         formData
       );
+      console.log("Login response:", res.data);
 
       localStorage.setItem("user-token", res.data.token);
 
