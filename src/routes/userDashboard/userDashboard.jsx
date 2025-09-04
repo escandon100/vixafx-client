@@ -31,7 +31,7 @@ const UserDashboard = () => {
     }
 
     axios
-      .get("http://localhost:5000/api/userDashboard/send/", {
+      .get("https://vixafx-api-1.onrender.com/api/userDashboard/send/", {
         headers: { "user-token": token },
       })
       .then((res) => {
