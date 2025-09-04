@@ -44,11 +44,11 @@ const UserDashboard = () => {
       });
   }, []);
 
-  const handleLogout = (nav) => {
-    setActiveNav(nav);
-    localStorage.removeItem("user-token");
-    window.location.href = "/";
-  };
+  // const handleLogout = (nav) => {
+  //   setActiveNav(nav);
+  //   localStorage.removeItem("user-token");
+  //   window.location.href = "/";
+  // };
 
   const handleNav = (nav) => {
     setActiveNav(nav);
