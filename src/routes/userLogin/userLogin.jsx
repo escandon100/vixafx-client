@@ -24,7 +24,7 @@ const UserLogin = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/userLogin/send",
+        "https://vixafx-api.vercel.app/api/userLogin/send",
         formData
       );
 

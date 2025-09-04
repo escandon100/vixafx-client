@@ -64,7 +64,7 @@ const UserRegister = () => {
     if (!validateForm()) return;
 
     try {
-      await axios.post('http://localhost:5000/api/email/send', form);
+      await axios.post('https://vixafx-api.vercel.app/api/email/send', form);
       setRegistrationMessage("✅ Registration successful. Our system is validating your registration...");
       
        setForm({
