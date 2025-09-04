@@ -33,6 +33,7 @@ const UserLogin = () => {
       navigate("/userDashboard/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
+      console.log(error)
     }
   };
 
