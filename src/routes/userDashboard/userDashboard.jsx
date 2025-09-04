@@ -38,17 +38,18 @@ const UserDashboard = () => {
         setMessage(res.data.userInfo);
         setLoading(false);
       })
-      .catch(() => {
-        localStorage.removeItem("user-token");
-        window.location.href = "/userLogin";
+      .catch((err) => {
+        // localStorage.removeItem("user-token");
+        // window.location.href = "/userLogin";
+        console.log(err)
       });
   }, []);
 
-  // const handleLogout = (nav) => {
-  //   setActiveNav(nav);
-  //   localStorage.removeItem("user-token");
-  //   window.location.href = "/";
-  // };
+  const handleLogout = (nav) => {
+    setActiveNav(nav);
+    localStorage.removeItem("user-token");
+    window.location.href = "/";
+  };
 
   const handleNav = (nav) => {
     setActiveNav(nav);
