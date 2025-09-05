@@ -7,7 +7,7 @@
     text-align: center;
 
     @include responsiveness.small{
-        padding: 20px;
+        padding: 20px 5px;
     }
 
     @include responsiveness.medium{
@@ -20,7 +20,7 @@
         font-size: 24px;
 
         @include responsiveness.small{
-            font-size: 20px;
+            font-size: 18px;
         }
         @include responsiveness.medium{
             font-size: 22px;
@@ -31,7 +31,7 @@
         font-size: 22px;
 
         @include responsiveness.small{
-            font-size: 18px;
+            font-size: 16px;
         }
          @include responsiveness.medium{
             font-size: 20px;
@@ -42,7 +42,7 @@
         font-size: 20px;
 
         @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
         }
         
         @include responsiveness.medium{

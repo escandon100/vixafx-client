@@ -9,7 +9,7 @@
     padding: 50px 20px;
     
     @include responsiveness.small{
-        padding: 20px;
+        padding: 20px 5px;
     }
 
     @include responsiveness.medium{
@@ -176,7 +176,7 @@
                 
                 @include responsiveness.small{
                     flex: 2.5;
-                    font-size: 10px;
+                    font-size: 8px;
                 }
 
                 @include responsiveness.medium{
@@ -195,7 +195,7 @@
 
                 @include responsiveness.small{
                    width: 100%;
-                   flex :3.8;
+                   flex :6;
                 }
 
                 @include responsiveness.medium{
@@ -233,7 +233,7 @@
                 font-size: 20px;
 
                 @include responsiveness.small{
-                    font-size: 10px;
+                    font-size: 8px;
                     flex: 0.7;
                 }
                 @include responsiveness.medium{
@@ -256,7 +256,7 @@
                     width: 5%;
 
                     @include responsiveness.small{
-                        width: 30%;
+                        width: 40%;
                     }
                     @include responsiveness.medium{
                         width: 12%;
@@ -271,7 +271,7 @@
 
             h3{
                 @include responsiveness.small{
-                    font-size: 10px;
+                    font-size: 8px;
                 }
                 @include responsiveness.medium{
                     font-size: 16px;

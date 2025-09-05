@@ -1,21 +1,17 @@
 @use "../../../styles/responsiveness.scss";
 
 
-
-
-
 .reason2{
     color: black;
     padding: 50px 20px;
 
     @include responsiveness.small{
-        padding: 20px;
+        padding: 20px 5px;
     }
     @include responsiveness.medium{
         padding: 20px;
     }
 
-    
 
     .top{
 
@@ -38,7 +34,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -77,7 +73,7 @@
             font-size: 24px;
 
             @include responsiveness.small{
-                font-size: 20px;
+                font-size: 18px;
             }
 
             @include responsiveness.medium{
@@ -92,7 +88,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
 
             @include responsiveness.medium{

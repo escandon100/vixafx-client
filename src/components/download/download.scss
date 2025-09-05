@@ -10,7 +10,7 @@
 
     @include responsiveness.small{
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 5px;
       
     }
 
@@ -43,7 +43,7 @@
             font-size: 28px;
 
             @include responsiveness.small{
-                font-size: 20px;
+                font-size: 18px;
             }
 
              @include responsiveness.medium{
@@ -58,7 +58,7 @@
 
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16x;
@@ -70,7 +70,7 @@
        
         @include responsiveness.small{
             gap: 30px;
-            padding: 20px;
+            padding: 20px 5px;
         }
 
         @include responsiveness.medium{

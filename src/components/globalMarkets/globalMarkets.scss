@@ -74,7 +74,8 @@
         border: none;
 
         @include responsiveness.small{
-            font-size: 16px;
+            font-size: 14px;
+            padding: 10px;
         }
       
 
@@ -110,7 +111,7 @@
     h1{
         color: #fff;
         @include responsiveness.small{
-            font-size: 20px;
+            font-size: 18px;
         }
           @include responsiveness.medium{
             font-size: 22px;
@@ -126,7 +127,7 @@
 
 
         @include responsiveness.small{
-            font-size: 18px;
+            font-size: 14px;
         }
 
         @include responsiveness.medium{
