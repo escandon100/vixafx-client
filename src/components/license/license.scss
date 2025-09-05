@@ -30,7 +30,7 @@
         } 
 
         .left{
-            flex: 1;    
+            flex: 0.5;    
             
             @include responsiveness.medium{
                 display: none;

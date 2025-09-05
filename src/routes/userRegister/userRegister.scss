@@ -31,8 +31,9 @@
     }
 
     img{
-      height: 50px;
-      width: 100px;
+       width:150px;
+       height: 45px;
+       margin-bottom: 20px;
 
       @include responsiveness.small{
         height: 35px;
