@@ -4,7 +4,7 @@ import "./mainlist.scss"
 const First = () => {
   return (
     <div className='mainlist'>
-            <h2>1.INTERPRETATION</h2>
+            <h2>INTERPRETATION</h2>
             <p>“APPLICABLE REGULATIONS” means MFSA Rules or any other rules of a relevant regulatory authority; and all other applicable laws, rules and regulations as in force from time to time.</p>
             <p>“ASSOCIATE” means an undertaking in the same group as us, a representative whom we or an undertaking in the same group as us appoint, or any other person with whom we have a relationship that might reasonably be expected to give rise to a community of interest between us and them.</p>
             <p>“BASE CURRENCY” means US Dollars.</p>

@@ -12,9 +12,10 @@ import "./calendar.scss";
 
 const Calendar = () => {
   const [selectedDate, setSelectedDate] = useState(dayjs());
+  const [alarm , setAlarm] = useState("")
 
   const handleRemindClick = () => {
-    alert(`You will be reminded on ${selectedDate.format("dddd, MMMM D, YYYY")}`);
+    setAlarm(`You will be reminded on ${selectedDate.format("dddd, MMMM D, YYYY")}`);
   };
 
   return (
@@ -28,12 +29,7 @@ const Calendar = () => {
      
         <h1>CALENDAR OF WEBINARS</h1>
         <div className="calendar-box">
-          <div className="calendar-left-panel">
-            <h3>{selectedDate.format("MMMM YYYY")}</h3>
-          
-          </div>
-
-          <div className="calendar-main">
+           <div className="calendar-main">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
                 value={selectedDate}
@@ -44,6 +40,7 @@ const Calendar = () => {
             </LocalizationProvider>
           </div>
         </div>
+        <p className="alarm">{alarm}</p>
 
         <Button 
           variant="contained" 
@@ -53,6 +50,7 @@ const Calendar = () => {
         >
           REMIND
         </Button>
+
       </div>
      </div>
        <div className="side">

@@ -4,7 +4,7 @@ import "./mainlist.scss"
 function Twenty() {
     return ( 
         <div className="mainlist">
-            <h2>20. MISCELLANEOUS</h2>
+            <h2>MISCELLANEOUS</h2>
             <ol>
                 <li>AMENDMENTS
                     <p>We have the right to amend the terms of this Agreement. If we make any material change to this Agreement, we will give at least ten business days written notice to you. Such amendment will become effective on the date specified in the notice. Unless otherwise agreed, an amendment will not affect any outstanding order or Transaction or any legal rights or obligations which may already have arisen.</p>
@@ -14,11 +14,11 @@ function Twenty() {
                 </li>
                 <li>OUR DETAILS
                     <ul>
-                        <p>◉Name: P24O Limited</p>
-                        <p>◉Address: 31 Beeston Road, Nottingham</p>
-                        <p>◉Telephone No: +1 (201) 800-4783</p>
-                        <p>◉Fax No: +1 (201) 800-4783</p>
-                        <p>◉Email Address: support@vixafx.com</p>
+                        <p>Name: P24O Limited</p>
+                        <p>Address: 31 Beeston Road, Nottingham</p>
+                        <p>Telephone No: +1 (201) 800-4783</p>
+                        <p>Fax No: +1 (201) 800-4783</p>
+                        <p>Email Address: support@vixafx.com</p>
                         <p>You will notify us of any change of your address for the receipt of notices, instructions and other communications immediately.</p>
                     </ul>
 

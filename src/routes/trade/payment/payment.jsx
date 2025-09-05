@@ -39,7 +39,7 @@ const Payment = () => {
                         Deposit time – up to three working days
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                     <Accordion className="accordion">
@@ -54,7 +54,7 @@ const Payment = () => {
                        This is one more way to fund your Vixa Fx broker trade account. VISA, MasterCard, Maestro, Visa Electron cards are accepted. Instant deposit.
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                     <Accordion className="accordion">
@@ -69,7 +69,7 @@ const Payment = () => {
                        You are able to fund your Vixa Fx broker account via Neteller e-payment system. Instant deposit.
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                     <Accordion className="accordion">
@@ -86,7 +86,7 @@ const Payment = () => {
                         Deposit time – up to three working days
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                   
@@ -105,7 +105,7 @@ const Payment = () => {
                        You are able to fund your Vixa Fx broker account via Bitcoin. Instant deposit.
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                        <Accordion className="accordion">
@@ -120,7 +120,7 @@ const Payment = () => {
                         You are able to fund your Vixa Fx broker account via Yandex Money e-payment system. Instant deposit.
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                        <Accordion className="accordion">
@@ -135,7 +135,7 @@ const Payment = () => {
                         You are able to fund your Vixa Fx broker account via WebMoney e-payment system. Instant deposit.
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
                        <Accordion className="accordion">
@@ -150,7 +150,7 @@ const Payment = () => {
                        You are able to fund your Vixa Fx broker account via Skrill e-payment system. Instant deposit
                       </AccordionDetails>
                       <AccordionActions>
-                        <Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button>
+                        <Link to="/userDashboard"><Button className="depositButton"><img src="addIcon.png" alt="" srcset="" /><span>Deposit</span></Button></Link>
                       </AccordionActions>
                   </Accordion>
 

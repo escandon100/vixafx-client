@@ -42,7 +42,7 @@ const Contact = () => {
     <div className="contact">
       <div className="contact-left">
         <h1>
-          <FontAwesomeIcon icon={faEnvelope} className="icon" /> Contact contact
+          <FontAwesomeIcon icon={faEnvelope} className="icon" /> Contact Us
         </h1>
         <p className="intro">
           Need help? Send us a message and our contact team will get back to you

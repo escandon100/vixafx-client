@@ -25,7 +25,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -37,7 +37,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -51,7 +51,7 @@
         font-size: 18px;
 
         @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
         }
           @include responsiveness.medium{
             font-size: 16px;
@@ -88,7 +88,7 @@
         @include responsiveness.small{
             width: 100%;
             flex: none;
-            gap: 20px;
+            gap: 10px;
         }
 
         @include responsiveness.medium{
@@ -102,7 +102,7 @@
 
 
             @include responsiveness.small{
-                font-size: 22px;
+                font-size: 18px;
             }
 
             @include responsiveness.medium{
@@ -204,7 +204,7 @@
                         font-size: 18px;
 
                         @include responsiveness.small{
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                         @include responsiveness.medium{
                             font-size: 16px;
@@ -219,7 +219,7 @@
                         
 
                         @include responsiveness.small{
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                         @include responsiveness.medium{
                             font-size: 16px;

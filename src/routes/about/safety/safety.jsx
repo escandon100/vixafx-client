@@ -14,7 +14,6 @@ const Safety = () => {
                 <div className="safety">
                     <div className="main">
                         <h1>SAFETY OF FUNDS</h1>
-                        <h3>SAFETY OF FUNDS</h3>
                         <p>As a directed merchant, it is of central significance to  Vixa FX that customers' cash is secured and regarded consistently. Guidelines forced upon P24O Ltd. guarantee that Vixa FX  is dependably in consistency with guidelines so customers can trade with certainty safe in the information that their assets remain their funds consistently.</p>
                         <h3>Regulated by MFSA</h3>
                         <p>P24O Ltd. is controlled by the MFSA, a standout amongst the most regarded administrative bodies built up inside the steadiest economies in Europe. As a directed broker, P24O Ltd. is authorized to work a Forex Brokerage. To keep up its permit, P24O Ltd. is liable to stringent controls and trial of monetary and accounting transparency.</p>

@@ -4,7 +4,7 @@ import "./mainlist.scss"
 function Twentyone() {
     return ( 
         <div className="mainlist">
-            <h2>21. GOVERNING LAW AND JURISDICTION</h2>
+            <h2>GOVERNING LAW AND JURISDICTION</h2>
             <ol>
                 <li>GOVERNING LAW
                     <p>This Agreement shall be governed by and construed in accordance with US law.</p>

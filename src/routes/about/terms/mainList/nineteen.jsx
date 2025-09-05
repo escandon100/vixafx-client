@@ -5,7 +5,7 @@ import "./mainlist.scss"
 function Nineteen() {
     return ( 
         <div className="mainlist">
-            <h2>19. EXCLUSIONS, LIMITATIONS AND INDEMNITY</h2>
+            <h2>EXCLUSIONS, LIMITATIONS AND INDEMNITY</h2>
             <ol>
                 <li>GENERAL EXCLUSION
                     <p>Neither we nor our directors, officers, employees, or agents shall be liable for any losses, damages, costs or expenses, whether arising out of negligence, breach of contract, misrepresentation or otherwise, incurred or suffered by you under this Agreement (including any Transaction or where we have declined to enter into a proposed Transaction) unless such loss arises directly from our or their respective gross negligence, willful default or fraud. In no circumstance, shall we have liability for losses suffered by you or any third party for any special or consequential damage, loss of profits, loss of goodwill or loss of business opportunity arising under or in connection with this Agreement, whether arising out of negligence, breach of contract, misrepresentation or otherwise.</p>

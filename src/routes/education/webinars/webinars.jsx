@@ -16,7 +16,7 @@ const Webinars = () => {
             <div className="main">
                 <h1>FOREX WEBINARS</h1>
                  <p>
-                    EQ trades webinars are current preparing workshops directed by experienced merchants. 
+                    Vixa Fx webinars are current preparing workshops directed by experienced merchants. 
                     Each web exercise is organized in a manner to break down at least one issues (systems, exchanging approaches) progressively or to examine the present market circumstance with the goal to draw up a medium-term and long-term investment plan later on.
                  </p>
                  <p>

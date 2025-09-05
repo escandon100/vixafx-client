@@ -35,10 +35,10 @@ const Tenth = () => {
                 <li>MAINTAINING STANDARDS
                     <p>When using an Electronic Service you must:</p>
                     <ul>
-                        <p>◉ensure that the System is maintained in good order and is suitable for use with such Electronic Service;</p>
-                        <p>◉run such tests and provide such information to us as we shall reasonably consider necessary to establish that the System satisfies the requirements notified by us to you from time to time;</p>
-                        <p>◉carry out virus checks on a regular basis;</p>
-                        <p>◉inform us immediately of any unauthorized access to an Electronic Service or any unauthorized Transaction or instruction which you know of or suspect and, if within your control, cause such unauthorized use to cease;
+                        <p>ensure that the System is maintained in good order and is suitable for use with such Electronic Service;</p>
+                        <p>run such tests and provide such information to us as we shall reasonably consider necessary to establish that the System satisfies the requirements notified by us to you from time to time;</p>
+                        <p>carry out virus checks on a regular basis;</p>
+                        <p>inform us immediately of any unauthorized access to an Electronic Service or any unauthorized Transaction or instruction which you know of or suspect and, if within your control, cause such unauthorized use to cease;
                             and not at any time leave the terminal from which you have accessed such Electronic Service or let anyone else use the terminal until you have logged off such Electronic Service.</p>
                     </ul>
 
@@ -53,45 +53,45 @@ const Tenth = () => {
                     <p>Without prejudice to any other terms of this Agreement, relating to the limitation of liability and provision of indemnities, the following clauses shall apply to our Electronic Services.</p>
                     <ul>
                         <div className="list-item"> 
-                            <h4>◉SYSTEM ERRORS</h4>
+                            <h4>SYSTEM ERRORS</h4>
                             <p>We shall have no liability to you for damage which you may suffer as a result of transmission errors, technical faults, malfunctions, illegal intervention in network equipment, network overloads, malicious blocking of access by third parties, internet malfunctions, interruptions or other deficiencies on the part of internet service providers. You acknowledge that access to Electronic Services may be limited or unavailable due to such system errors, and that we reserve the right upon notice to suspend access to Electronic Services for this reason.</p>
                         </div> 
                         <div className="list-item"> 
-                            <h4>◉DELAYS</h4>
+                            <h4>DELAYS</h4>
                             <p>Neither we nor any third party software provider accepts any liability in respect of any delays, inaccuracies, errors or omissions in any data provided to you in connection with an Electronic Service.</p>
                         </div> 
                            <div className="list-item"> 
-                            <h4>◉SYSTEM ERRORS</h4>
+                            <h4>SYSTEM ERRORS</h4>
                             <p>We shall have no liability to you for damage which you may suffer as a result of transmission errors, technical faults, malfunctions, illegal intervention in network equipment, network overloads, malicious blocking of access by third parties, internet malfunctions, interruptions or other deficiencies on the part of internet service providers. You acknowledge that access to Electronic Services may be limited or unavailable due to such system errors, and that we reserve the right upon notice to suspend access to Electronic Services for this reason.</p>
                             <p>We do not accept any liability in respect of any delays, inaccuracies or errors in prices quoted to you if these delays, inaccuracies or errors are caused by third party service providers with which we may collaborate.</p>
                             <p>We shall not be obliged to execute any instruction which has been identified that is based on errors caused by delays of the system to update prices provided by the system price feeder or the third party service providers. We do not accept any liability towards executed trades that have been based and have been the result of delays as described above.</p>
                         </div> 
                            <div className="list-item"> 
-                            <h4>◉VIRUSES FROM AN ELECTRONIC SERVICE</h4>
+                            <h4>VIRUSES FROM AN ELECTRONIC SERVICE</h4>
                             <p>We shall have no liability to you (whether in contract or in tort, including negligence) in the event that any viruses, worms, software bombs or similar items are introduced into the System via an Electronic Service or any software provided by us to you in order to enable you to use the Electronic Service, provided that we have taken reasonable steps to prevent any such introduction.</p>
                         </div> 
                              <div className="list-item"> 
-                            <h4>◉VIRUSES FROM YOUR SYSTEM</h4>
+                            <h4>VIRUSES FROM YOUR SYSTEM</h4>
                             <p>You will ensure that no computer viruses, worms, software bombs, or similar items are introduced into our computer system or network and will indemnify us on demand for any loss that we suffer arising as a result of any such introduction.</p>
                         </div> 
                         <div className="list-item"> 
-                            <h4>◉UNAUTHORISED USE</h4>
+                            <h4>UNAUTHORISED USE</h4>
                             <p>We shall not be liable for any loss, liability or cost whatsoever arising from any unauthorized use of the Electronic Service. You shall on demand indemnify, protect and hold us harmless from and against all losses, liabilities, judgments, suits, actions, proceedings, claims, damages and costs resulting from or arising out of any act or omission by any person using an Electronic Service by using your designated passwords, whether or not you authorized such use.</p>
                         </div> 
                             <div className="list-item"> 
-                            <h4>◉MARKETS</h4>
+                            <h4>MARKETS</h4>
                             <p>We shall not be liable for any act taken by or on the instruction of an exchange, clearing house or regulatory body.</p>
                     </div> 
                      <div className="list-item"> 
-                            <h4>◉SUSPENSION OR PERMANENT WITHDRAWAL WITH NOTICE</h4>
+                            <h4>SUSPENSION OR PERMANENT WITHDRAWAL WITH NOTICE</h4>
                             <p>We may suspend or permanently withdraw an Electronic Service, by giving you 24 hours written notice.</p>
                     </div> 
                      <div className="list-item"> 
-                            <h4>◉IMMEDIATE SUSPENSION OR PERMANENT WITHDRAWAL</h4>
+                            <h4>IMMEDIATE SUSPENSION OR PERMANENT WITHDRAWAL</h4>
                             <p>We have the right, unilaterally and with immediate effect, to suspend or withdraw permanently your ability to use any Electronic Service, or any part thereof, without notice, where we consider it necessary or advisable to do so, for example due to your non-compliance with the Applicable Regulations, breach of any provisions of this Agreement, on the occurrence of an Event of Default, network problems, failure of power supply, for maintenance, or to protect you when there has been a breach of security. In addition, the use of an Electronic Service may be terminated automatically, upon the termination (for whatever reason) of: any license granted to us which relates to the Electronic Service; or this Agreement.</p>
                     </div> 
                      <div className="list-item"> 
-                            <h4>◉EFFECTS OF TERMINATION</h4>
+                            <h4>EFFECTS OF TERMINATION</h4>
                             <p>In the event of a termination of the use of an Electronic Service for any reason, upon request by us, you shall, at our option, return to us or destroy all hardware, software and documentation we have provided you in connection with such Electronic Service and any copies thereof.</p>
                     </div> 
                         

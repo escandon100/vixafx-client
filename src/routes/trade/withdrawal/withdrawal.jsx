@@ -34,56 +34,56 @@ const Withdrawal = () => {
                                     <td>Bitcoin</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="visa.png" alt="" /></td>
                                     <td>Credit Card</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="yandex.png" alt="" /></td>
                                     <td>Yandex Money</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="bank.png" alt="" /></td>
                                     <td>Bank Transfer</td>
                                     <td>Between 2-3 days</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="qiwi.png" alt="" /></td>
                                     <td>Qiwi Wallet</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="neteller.png" alt="" /></td>
                                     <td>Neteller</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="webmoney.svg" alt="" /></td>
                                     <td>Webmoney</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                                  <tr>
                                     <td><img src="skrill.png" alt="" /></td>
                                     <td>Skrill</td>
                                     <td>Instant</td>
                                     <td>$0</td>
-                                    <td><button>Fund your account</button></td>
+                                    <td><Link to="/userDashboard"><button>Fund your account</button></Link></td>
                                 </tr>
                            
                             </tbody>

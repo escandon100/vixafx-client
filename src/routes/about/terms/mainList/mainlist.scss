@@ -7,6 +7,11 @@
 
     h2{
         margin-bottom: 20px;
+
+        @include responsiveness.small{
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
     }
 
     p{
@@ -16,7 +21,7 @@
         color: #4a5566;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
                 margin-bottom: 10px;
             }
             @include responsiveness.medium{
@@ -43,10 +48,12 @@
                 font-size: 18px;
                  color: #4a5566;
                  line-height: 1.6;
+                 list-style-type: none;
 
                  @include responsiveness.small{
-                    font-size: 14px;
+                    font-size: 12px;
                     padding-left: 20px;
+                    margin: 10px;
                  }
                  @include responsiveness.medium{
                     font-size: 16px;

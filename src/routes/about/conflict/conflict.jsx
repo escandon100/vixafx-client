@@ -15,9 +15,8 @@ const Conflict = () => {
         <div className="conflict">
             <div className="main">
                 <h1>CONFLICT OF INTEREST</h1>
-                <h3>CONFLICT OF INTERESTS</h3>
                 <p>
-                    The www.traderbasefx.com site is possessed by P24O Ltd. ("the Company") a venture firm controlled by the Malta Financial Services Authority with permit number IS/56519. The Company is required, according to the European Union's Markets in Financial Instruments Directive (MiFID) and as per the Investment Services Act 2004 (Chapter 370 of the Laws of Malta), to give data on the Company's arrangement in regards to irreconcilable circumstances and its way with dealing with any irreconcilable circumstances genuinely: both between www.traderbasefx.com , our executives, representatives and our customers, and between your interests and those of different customers.
+                    The www.vixafx.com site is possessed by P24O Ltd. ("the Company") a venture firm controlled by the Malta Financial Services Authority with permit number IS/56519. The Company is required, according to the European Union's Markets in Financial Instruments Directive (MiFID) and as per the Investment Services Act 2004 (Chapter 370 of the Laws of Malta), to give data on the Company's arrangement in regards to irreconcilable circumstances and its way with dealing with any irreconcilable circumstances genuinely: both between www.vixafx.com , our executives, representatives and our customers, and between your interests and those of different customers.
                 </p>
                 <h3>DEFINITION OF CONFLICT OF INTERESTS</h3>
                 <p>

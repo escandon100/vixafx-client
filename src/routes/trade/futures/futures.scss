@@ -26,7 +26,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -38,7 +38,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -52,7 +52,7 @@
         font-size: 18px;
 
         @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
         }
           @include responsiveness.medium{
             font-size: 16px;
@@ -87,7 +87,7 @@
         @include responsiveness.small{
             width: 100%;
             flex: none;
-            gap: 20px;
+            gap: 10px;
         }
         @include responsiveness.medium{
             flex: 2.5;
@@ -101,7 +101,7 @@
              font-size: 26px;
 
              @include responsiveness.small{
-                font-size: 20px;
+                font-size: 18px;
             }
             @include responsiveness.medium{
                 font-size: 24px;
@@ -125,7 +125,7 @@
             color: #4a5566;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -188,8 +188,9 @@
             text-align: left;
 
             @include responsiveness.small{
-                width: 300px;
-                padding: 15px;
+                width: 250px;
+                padding: 10px;
+                gap: 10px;
             }
 
             @include responsiveness.medium{
@@ -214,13 +215,15 @@
                 }
             }
 
+      
+
 
             h1{
-               font-size: 26px;
+                font-size: 26px;
                 color: #fff;
 
                 @include responsiveness.small{
-                    font-size: 22px;
+                    font-size: 18px;
                 }
 
                 @include responsiveness.medium{
@@ -233,7 +236,7 @@
                 font-size: 24px;
 
                 @include responsiveness.small{
-                    font-size: 18px;
+                    font-size: 14px;
                 }
                 @include responsiveness.medium{
                     font-size: 20px;
@@ -241,7 +244,8 @@
             }
          
          
-         }
+
+    }
     }
 
     .side{

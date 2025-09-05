@@ -25,7 +25,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -37,7 +37,7 @@
             font-size: 18px;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -51,7 +51,7 @@
         font-size: 18px;
 
         @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
         }
           @include responsiveness.medium{
             font-size: 16px;
@@ -86,7 +86,7 @@
         @include responsiveness.small{
             width: 100%;
             flex: none;
-            gap: 20px;
+            gap: 10px;
         }
           @include responsiveness.medium{
             flex: 2.5;
@@ -98,7 +98,7 @@
             margin-bottom: 50px;
 
            @include responsiveness.small{
-                font-size: 20px;
+                font-size: 18px;
                 margin-bottom: 20px;
             }
             @include responsiveness.medium{
@@ -125,7 +125,7 @@
             color: #4a5566;
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
             @include responsiveness.medium{
                 font-size: 16px;
@@ -139,7 +139,7 @@
         text-align: center;
 
         @include responsiveness.small{
-          width: 100%;
+          width: 90%;
         }
         @include responsiveness.medium{
           width: 100%;
@@ -148,24 +148,18 @@
 
 
     .calendar-box {
-      display: flex;
       box-shadow: 0px 0px 5px black;
       border-radius: 10px;
+      margin-bottom: 20px;
+
     }
 
-    .calendar-left-panel {
-      background: #01a876;
-      color: white;
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
+    .alarm{
+        color: red;
+        font-weight: 700;
+        
     }
 
-    .calendar-main {
-      flex : 2;
-    }
 
     .remind-button {
       margin-top: 50px;
@@ -176,6 +170,7 @@
 
       @include responsiveness.small{
         padding: 10px 25px;
+        margin-top: 20px;
       }
 
       &:hover {

@@ -4,7 +4,7 @@ import "./mainlist.scss"
 const Ninth = () => {
     return ( 
         <div className="mainlist">
-            <h2>9. TRADING POLICIES AND PROCEDURES</h2>
+            <h2>TRADING POLICIES AND PROCEDURES</h2>
             <ol>
                 <li>PLACING OF INSTRUCTIONS
                     <p>You may give us instructions in electronic form through the P24O Online Trading System or orally by telephone to the P24O Trading Desk; unless we tell you that instructions can only be given in a particular way. If you give instructions by telephone, your conversation will be recorded. If any instructions are received by us by telephone, computer or other medium we may ask you to confirm such instructions in writing. We shall be authorized to follow instructions notwithstanding your failure to confirm them in writing. In this Agreement “instructions” and “orders” have the same meaning.</p>
@@ -12,12 +12,12 @@ const Ninth = () => {
                 <li>TYPES OF ORDERS ACCEPTED
                     <p>Some of the types of Orders P24O accepts include, but are not limited to:</p>
                     <ul>
-                        <p>◉Good till Cancelled (“GTC”) – An Order (other than a Market Order), that by its terms is effective until filled or cancelled by Customer. GTC Orders do not automatically cancel at the end of the Business Day on which they are placed.</p>
-                        <p>◉Limit – An Order (other than a Market Order) to buy or sell the identified market at a specified price. A Limit Order to buy generally will be executed when the Ask Price equals or falls below the Bid Price that you specify in the Limit Order. A Limit Order to sell generally will be executed when the Bid Price equals or exceeds the Ask Price that you specify in the Limit Order.</p>
-                        <p>◉Market – An Order to buy or sell the identified market at the current market price that P24O provides either via the Online Trading System or over the telephone through one of the dealers. An Order to buy is executed at the current market Ask Price and an Order to sell is executed at the current market Bid Price.</p>
-                        <p>◉One Cancels the Other (“OCO”) – An Order that is linked to another Order. If one of the Orders is executed, the other will be automatically cancelled.</p>
-                        <p>◉Stop Loss – A Stop Loss Order is an instruction to buy or sell a market at a price which is worse than the opening price of an open position (or worse than the prevailing price when applying the Stop Loss Order to an already open position). It can be used to help protect against losses. Please note that because of market gapping, the best available price that may be achieved could be materially different to the price set on the Stop Loss Order and as such, Stop Loss Orders are not guaranteed to take effect at the price for which they are set.</p>
-                        <p>◉Trailing Stop – A Trailing Stop is the same as a Stop Loss Order with the only difference being that, instead of setting a price at which the Order is activated, the Trailing Stop Order is activated at a fixed distance from the market price. For example, if Customer has purchased a long open position and the market Ask Price increases, the Trailing Stop price will also increase and will trail behind the market Ask Price at the fixed distance set by Customer. If the market Ask Price then decreases, the Trailing Stop price will remain fixed at its last position and if the market Ask Price reaches the Trailing Stop price, the Order will be executed. Please note that because of market gapping, the best available price that may be achieved could be materially different to the price set on the Trailing Stop Order and as such, Trailing Stop Orders are not guaranteed to take effect at the fixed distance for which they are set.</p>
+                        <p>Good till Cancelled (“GTC”) – An Order (other than a Market Order), that by its terms is effective until filled or cancelled by Customer. GTC Orders do not automatically cancel at the end of the Business Day on which they are placed.</p>
+                        <p>Limit – An Order (other than a Market Order) to buy or sell the identified market at a specified price. A Limit Order to buy generally will be executed when the Ask Price equals or falls below the Bid Price that you specify in the Limit Order. A Limit Order to sell generally will be executed when the Bid Price equals or exceeds the Ask Price that you specify in the Limit Order.</p>
+                        <p>Market – An Order to buy or sell the identified market at the current market price that P24O provides either via the Online Trading System or over the telephone through one of the dealers. An Order to buy is executed at the current market Ask Price and an Order to sell is executed at the current market Bid Price.</p>
+                        <p>One Cancels the Other (“OCO”) – An Order that is linked to another Order. If one of the Orders is executed, the other will be automatically cancelled.</p>
+                        <p>Stop Loss – A Stop Loss Order is an instruction to buy or sell a market at a price which is worse than the opening price of an open position (or worse than the prevailing price when applying the Stop Loss Order to an already open position). It can be used to help protect against losses. Please note that because of market gapping, the best available price that may be achieved could be materially different to the price set on the Stop Loss Order and as such, Stop Loss Orders are not guaranteed to take effect at the price for which they are set.</p>
+                        <p>Trailing Stop – A Trailing Stop is the same as a Stop Loss Order with the only difference being that, instead of setting a price at which the Order is activated, the Trailing Stop Order is activated at a fixed distance from the market price. For example, if Customer has purchased a long open position and the market Ask Price increases, the Trailing Stop price will also increase and will trail behind the market Ask Price at the fixed distance set by Customer. If the market Ask Price then decreases, the Trailing Stop price will remain fixed at its last position and if the market Ask Price reaches the Trailing Stop price, the Order will be executed. Please note that because of market gapping, the best available price that may be achieved could be materially different to the price set on the Trailing Stop Order and as such, Trailing Stop Orders are not guaranteed to take effect at the fixed distance for which they are set.</p>
                     </ul>  
                      <p>Following submission of an Order, it is your sole responsibility to remain available for Order and Fill confirmations, and other communications regarding your Account until all open Orders are completed. Thereafter, you must monitor your Account frequently when you have Open Positions in the Account.</p>
                     <p>Your Order shall be valid in accordance with the type and time of the given Order, as specified. If the time of validity or expiration date/time of the order is not specified, it shall be valid for an indefinite period.</p>
@@ -41,11 +41,11 @@ const Ninth = () => {
                 <li> CONTROL OF ORDERS PRIOR TO EXECUTION
                     <p>We have the right (but not the obligation) to set limits and/or parameters to control your ability to place orders at our absolute discretion. Such limits and/or parameters may be amended, increased, decreased, removed or added to by us at our absolute discretion and may include (without limitation):</p>
                     <ul>
-                        <p>◉controls over maximum order amounts and maximum order sizes;</p>
-                        <p>◉controls over our total exposure to you;</p>
-                        <p>◉controls over prices at which orders may be submitted (to include (without limitation) controls over orders which are at a price which differs greatly from the market price at the time the order is submitted to the order book);</p>
-                        <p>◉controls over the Electronic Services (to include (without limitation) any verification procedures to ensure that any particular order or orders has come from you);</p>
-                        <p>◉or any other limits, parameters or controls which we may be required to implement in accordance with Applicable Regulations.</p>
+                        <p>controls over maximum order amounts and maximum order sizes;</p>
+                        <p>controls over our total exposure to you;</p>
+                        <p>controls over prices at which orders may be submitted (to include (without limitation) controls over orders which are at a price which differs greatly from the market price at the time the order is submitted to the order book);</p>
+                        <p>controls over the Electronic Services (to include (without limitation) any verification procedures to ensure that any particular order or orders has come from you);</p>
+                        <p>or any other limits, parameters or controls which we may be required to implement in accordance with Applicable Regulations.</p>
                     </ul>
                 </li>
                 <li>EXECUTION OF ORDERS
@@ -58,20 +58,20 @@ const Ninth = () => {
                 <li>CANCELLATION OF TRADES
                     <p>We have the right to reject an order or to cancel a trade if we have evidence on:</p>
                     <ul>
-                      <p>◉fraud/illegal actions that led to the transaction;</p>  
-                       <p>◉orders placed based on manipulated prices as a result of system errors or system malfunctions;</p> 
-                        <p>◉arbitrage trading on prices offered by our platforms as a result of systems errors;</p>
-                        <p>◉and coordinated transactions by related parties in order to take advantage of systems errors and delays on systems updates</p>
+                      <p>fraud/illegal actions that led to the transaction;</p>  
+                       <p>orders placed based on manipulated prices as a result of system errors or system malfunctions;</p> 
+                        <p>arbitrage trading on prices offered by our platforms as a result of systems errors;</p>
+                        <p>and coordinated transactions by related parties in order to take advantage of systems errors and delays on systems updates</p>
                     </ul>
                 </li>
                 <li>DISABLING AND CANCELLING DEPOSITS
                     <p>We have the right not to accept funds deposited by you and/or to cancel your deposits in the following circumstances:</p>
                     <ul>
-                        <p>◉If you fail to provide P24O with any documents it requests from you either for client identification purposes or for any other reason;</p>
-                        <p>◉If P24O suspects or has concerns that the submitted documents may be false or fake;</p>
-                        <p>◉If P24O suspects you are involved in illegal or fraudulent activity;</p>
-                        <p>◉If P24O is informed that your credit or debit card (or any other payment method used) has been lost or stolen;</p>
-                        <p>◉Where P24O considers that there is a chargeback risk;</p>
+                        <p>If you fail to provide P24O with any documents it requests from you either for client identification purposes or for any other reason;</p>
+                        <p>If P24O suspects or has concerns that the submitted documents may be false or fake;</p>
+                        <p>If P24O suspects you are involved in illegal or fraudulent activity;</p>
+                        <p>If P24O is informed that your credit or debit card (or any other payment method used) has been lost or stolen;</p>
+                        <p>Where P24O considers that there is a chargeback risk;</p>
                         <p>and when you deposit $15.000 or more or if you make over 10 separate deposits to your trading Accounts and P24O is unable to verify your credit or debit card details or is unable to verify any other payment method used.
                          In case of cancelled deposits, and if there is not a confiscation of your funds by a supervisory authority on the grounds of money laundering suspicion or for any other legal infringement, your funds will be returned to your bank account.</p>
                     </ul>
@@ -98,8 +98,8 @@ const Ninth = () => {
                 <li>NEGATIVE BALANCE PROTECTION MECHANISM ON CFD TRADING ACCOUNTS
                     <p>In cases of market movements which result in a negative balance in a client’s CFD Trading Account, P24O Limited will execute one of the following mechanisms:</p>
                     <ul>
-                        <p>◉It will adjust the account balance to zero, thereby ensuring that the Client will not have to fund any negative balance and/or lose more money beyond the amount that the Client had allocated initially for CFD trading;</p>
-                        <p>◉It will open a new trading account with a zero balance and close off the old account, without the client having to fund any negative balance and/or lose more money beyond the amount that the Client had allocated initially for CFD trading;</p>
+                        <p>It will adjust the account balance to zero, thereby ensuring that the Client will not have to fund any negative balance and/or lose more money beyond the amount that the Client had allocated initially for CFD trading;</p>
+                        <p>It will open a new trading account with a zero balance and close off the old account, without the client having to fund any negative balance and/or lose more money beyond the amount that the Client had allocated initially for CFD trading;</p>
                     </ul>
                     <p>The negative balance protection outlined above is designed to counteract the occurrence of exceptional circumstances with the aim of providing client protection in case of extreme market events.</p>
                 </li>
