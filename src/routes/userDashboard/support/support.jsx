@@ -15,7 +15,6 @@ const Support = () => {
 
   const [status, setStatus] = useState("");
   const [formData, setFormData] = useState({
-    firstName: message.firstName,
     email: message.email,
     subject: "",
     message: "",
@@ -27,7 +26,7 @@ const Support = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/support/send",
+        "https://vixafx-api-1.onrender.com//api/support/send",
         formData
       );
       setStatus(res.data.message);
@@ -83,10 +82,10 @@ const Support = () => {
         <h2>Frequently Asked Questions</h2>
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>What is Traderbase FX?</Typography>
+            <Typography>What is Vixa FX?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            Traderbase FX is a modern online investment platform offering
+            Vixa FX is a modern online investment platform offering
             structured subscription-based investment packages. Our platform
             empowers users to invest in tailored plans and track performance
             through a clear, intuitive dashboard.
@@ -128,10 +127,10 @@ const Support = () => {
 
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Is Traderbase FX regulated?</Typography>
+            <Typography>Is Vixa FX regulated?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            Yes, Traderbase FX is a legitimate platform that simulates
+            Yes, Vixa FX is a legitimate platform that simulates
             brokerage-style investing with transparency. While not a live
             brokerage, all investments are securely managed.
           </AccordionDetails>

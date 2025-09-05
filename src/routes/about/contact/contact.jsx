@@ -1,57 +1,140 @@
-import React from 'react';
-import { Link } from "react-router";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome ,faClock } from '@fortawesome/free-solid-svg-icons';
-import "./contact.scss"
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import axios from "axios";
+import "./contact.scss";
 
 const Contact = () => {
-    return ( 
-        <>
-        <div className="contactNav">
-            <Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faHome} color="#4a5566" /><p>Main</p></Link><span>/ Contact Us</span>
-        </div>
-        <div className="contact">
-            <div className="main">
-                <div className="main1">
-                      <h1>WRITE TO US</h1>
-                 <form action="">
-                    <label htmlFor="">Message topic</label>
-                    <input type="text" />
-                    <label htmlFor="">Name</label>
-                    <input type="text" />
-                    <label htmlFor="">Email</label>
-                    <input type="email" />
 
-                    <textarea className='textarea'  name="" id=""></textarea>
-                    <button>Send</button>
-                </form>     
+  const [status, setStatus] = useState("");
+  const [formData, setFormData] = useState({
+    subject: "",
+    message: "",
+  });
 
-                </div>
-              
-                <div className="main2">
-                    <h1>CONTACTS</h1>                  
-                    <p><FontAwesomeIcon className="icon" icon={faEnvelope} color="#4a5566" />[support@traderbasefx.com]</p>
-                    <p><FontAwesomeIcon className="icon" icon={faClock} color="#4a5566" /> working hours of technical support: 08:00 - 20:00 (GMT+3) </p>
-                </div>
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
 
-            </div>
-            <div>
-              
-            </div>
-         
+    try {
+      const res = await axios.post(
+        "https://vixafx-api-1.onrender.com//api/support/send",
+        formData
+      );
+      setStatus(res.data.message);
+      setFormData({ ...formData, subject: "", message: "" });
+    } catch (err) {
+      console.log(err);
+      setStatus("❌ Failed to send message. Try again later.");
+    }
+  };
 
-             <div className="side">
-                <h3>Trading tools</h3>
-                <ul>
-                    <li ><Link to="/about">About Us</Link></li>
-                    <li className='contactClicked'><Link to="/contact">Contact Us</Link></li>
-                    <li><Link to="/affiliate">Affiliate Program</Link></li>
-             </ul>
-            </div>
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-        </div>
-        </>
-     );
-}
+  return (
+    <div className="contact">
+      <div className="contact-left">
+        <h1>
+          <FontAwesomeIcon icon={faEnvelope} className="icon" /> Contact contact
+        </h1>
+        <p className="intro">
+          Need help? Send us a message and our contact team will get back to you
+          as soon as possible.
+        </p>
+
+        <form onSubmit={handleSubmit} className="contact-form"> 
+          <label>Subject</label>
+          <input
+            onChange={handleChange}
+            value={formData.subject}
+            name="subject"
+            type="text"
+            placeholder="Enter subject"
+          />
+
+          <label>Message</label>
+          <textarea
+            onChange={handleChange}
+            value={formData.message}
+            className="textArea"
+            name="message"
+            placeholder="Type your message..."
+          ></textarea>
+
+          <button type="submit">
+            <FontAwesomeIcon icon={faPaperPlane} /> Send Message
+          </button>
+          {status && <p className="status">{status}</p>}
+        </form>
+      </div>
+
+      <div className="contact-right">
+        <h2>Frequently Asked Questions</h2>
+        <Accordion className="accordion">
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>What is Vixa FX?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            Vixa FX is a modern online investment platform offering
+            structured subscription-based investment packages. Our platform
+            empowers users to invest in tailored plans and track performance
+            through a clear, intuitive dashboard.
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion className="accordion">
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>How do I open an account?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            Register with your email and password. Once verified, you’ll gain
+            access to your personalized dashboard to deposit, invest, and track
+            your earnings.
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion className="accordion">
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>What packages are available?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            We offer Weekly, Monthly, and Premium investment packages, each with
+            clear details about duration, returns, and minimum deposit
+            requirements.
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion className="accordion">
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>How do I deposit and withdraw funds?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            Navigate to the Deposit/Withdrawal section, choose your method, and
+            complete the transaction. You can track statuses in Transaction
+            History.
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion className="accordion">
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Is Vixa FX regulated?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            Yes, Vixa FX is a legitimate platform that simulates
+            brokerage-style investing with transparency. While not a live
+            brokerage, all investments are securely managed.
+          </AccordionDetails>
+        </Accordion>
+      </div>
+    </div>
+  );
+};
 
 export default Contact;

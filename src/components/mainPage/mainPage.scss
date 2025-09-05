@@ -101,6 +101,7 @@
                 border-radius: 10px;
                 font-size: 22px;
                 width: 100px;
+                text-align: center;
 
                 @include responsiveness.small{
                     padding: 10px;

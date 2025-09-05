@@ -1,223 +1,194 @@
 @use "../../../../styles/responsiveness.scss";
 
-.contactNav{
-    padding: 20px 30px;
-    box-shadow: 0px 0px 10px black;
-    display: flex;
-    gap: 5px;
+.contact {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+
+  @include responsiveness.small{
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+    @include responsiveness.medium{
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+
+
+
+  .contact-left {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-size: 18px;
+    height: 100%;
+
 
     @include responsiveness.small{
-        padding: 10px;
+      padding: 20px;
     }
 
-    @include responsiveness.medium{
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #1f2937;
+
+      @include responsiveness.small{
+        font-size: 20px;
+      }
+    }
+
+    .intro {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 30px;
+
+      @include responsiveness.small{
+        font-size: 12px;
+      }
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      label {
+        font-weight: 600;
+        font-size: 18px;
+        color: #374151;
+
+        @include responsiveness.small{
+          font-size: 14px;
+        }
+      }
+
+      input,
+      .textArea {
         padding: 20px;
-    }
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 18px;
+        outline: none;
+        transition: border 0.2s;
 
+        @include responsiveness.small{
+          font-size: 14px;
+        }
 
-    .link{
+        &:focus {
+          border: 1px solid #6366f1;
+          box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+      }
+
+      .textArea {
+        height: 120px;
+        resize: none;
+      }
+
+      button {
+        background: #4f46e5;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all ease-in .2s;
         display: flex;
-        gap : 5px ;
-        color : #01a876;
-
-        P{
-            font-size: 18px;
-
-            @include responsiveness.small{
-                font-size: 14px;
-            }
-            @include responsiveness.medium{
-                font-size: 16px;
-            }
-          
-        }
-
-        & .icon{
-            font-size: 18px;
-
-            @include responsiveness.small{
-                font-size: 14px;
-            }
-            @include responsiveness.medium{
-                font-size: 16px;
-            }
-        }
-
-    }
-
-    span{
-        color: #4a5566 ;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         font-size: 18px;
 
         @include responsiveness.small{
+          font-size: 14px;
+        }
+        
+        &:hover {
+          font-size: 18px;
+          background: #4338ca;
+
+          @include responsiveness.small{
             font-size: 14px;
+          }
         }
-          @include responsiveness.medium{
-            font-size: 16px;
+      }
+
+      .status {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #16a34a; 
+
+        @include responsiveness.small{
+          font-size: 14px;
+          margin-top: 5px;
         }
+      }
     }
+  }
 
-}
-
-.contact{
-    color : black;
-    display: flex;
-    padding: 30px;
-    gap: 30px;
-
+  .contact-right {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    height: 100%;
+ 
 
     @include responsiveness.small{
-        padding:10px;
-        
+      padding: 20px;
     }
-    @include responsiveness.medium{
-        padding:20px;
-        gap: 20px;
-    }
-  
-    
 
-    .main{
-        flex : 4;
-        display : flex;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #1f2937;
+
+      @include responsiveness.small{
+        font-size: 18px;
+      }
+    }
+
+    .accordion {
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: none;
+      border: 1px solid #e5e7eb;
+
+      @include responsiveness.small{
+        margin-bottom: 10px;
+      }
+
+      .MuiAccordionSummary-root {
+        font-weight: 600;
+        color: #374151;
+        font-size: 18px;
 
         @include responsiveness.small{
-            width: 100%;
-            flex-direction: column;
-            gap: 20px;
+          font-size: 14px;
         }
-          @include responsiveness.medium{
-            flex: 2.5;
-            gap: 30px;
+      }
+
+      .MuiAccordionDetails-root {
+        font-size: 18px;
+        color: #6b7280;
+        line-height: 1.6;
+
+         @include responsiveness.small{
+          font-size: 14px;
         }
-
-        .main1{
-            // display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-        .main2{
-            flex: 1;
-            display: flex;
-             flex-direction: column;
-             gap: 50px;
-
-        }
-
-
-        h1{
-            font-size: 26px;
-
-           @include responsiveness.small{
-                font-size: 20px;
-            }
-            @include responsiveness.medium{
-                font-size: 24px;
-            }
-        }
-
-        h3{
-            font-size: 24px;
-
-        
-             @include responsiveness.small{
-                font-size: 16px;
-            }
-            @include responsiveness.medium{
-                font-size: 20px;
-            }
-        }
-
-        P{
-            font-size: 18px;
-            line-height: 1.6;
-            color: #4a5566;
-
-            @include responsiveness.small{
-                font-size: 14px;
-            }
-            @include responsiveness.medium{
-                font-size: 16px;
-            }
-        }
-
-        input{
-            display: block;
-
-            @include responsiveness.small{
-                margin-bottom: 20px;
-            }
-
-        }
-
-        .textarea{
-            width:80px;
-            height: 5;
-
-            @include responsiveness.small{
-                height: 100px;
-                width: 200px;
-            }
-        }
-    
-        button{
-        margin-top: 50px;
-        background-color: #00b16a;
-        color: white;
-        padding: 15px 35px;
-        font-weight: bold;
-        border-radius: 5px;
-        border: none;
-        display: block;
-
-        @include responsiveness.small{
-             padding: 10px 25px;
-             margin-top: 20px;
-        }
-
-        &:hover {
-        background-color: #019a5d;
-        }
-        
-        
+      }
     }
-    }
-
-    .side {
-
-          flex: 1;
-
-        h3 {
-            font-size: 24px;
-
-            @include responsiveness.medium{
-                font-size: 22px;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-
-            li {
-                margin: 40px 10px;
-                font-size: 20px;
-
-                 &.contactClicked{
-                    background-color: #d4d5e0;
-                    border-left: 4px solid #555866;
-                    padding: 10px;
-                    color: #666973;
-
-                }
-
-                @include responsiveness.medium{
-                    margin: 25px 5px;
-                    font-size: 16px;
-                }
-
-            }
-        }
-
-    }
+  }
 }
-  

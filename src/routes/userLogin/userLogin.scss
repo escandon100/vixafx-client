@@ -43,7 +43,7 @@
       margin-bottom: 8px;
 
       @include responsiveness.small{
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 
@@ -62,6 +62,10 @@
       flex-direction: column;
       gap: 30px;
 
+      @include responsiveness.small{
+        gap: 15px;
+      }
+
       .inputGroup {
         text-align: left;
     
@@ -74,6 +78,7 @@
 
           @include responsiveness.small{
             font-size: 12px;
+            margin-bottom: 10px;
           }
         }
 
