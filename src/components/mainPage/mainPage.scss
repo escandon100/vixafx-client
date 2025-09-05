@@ -119,14 +119,14 @@
 
         &.slide1{
             height: calc(100vh - 150px);
-            background-image: url("slide1.jpg");
+            background-image: url("/slide1.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         &.slide2{
             height: calc(100vh - 150px);
-            background-image: url("slide2.png");
+            background-image: url("/slide2.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -134,7 +134,7 @@
         }
         &.slide3{
             height: calc(100vh - 150px);
-            background-image: url("slide3.jpg");
+            background-image: url("/slide3.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
