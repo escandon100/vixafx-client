@@ -23,7 +23,7 @@
 
 
     try {
-        await axios.post('http://localhost:5000/api/userRegister/send', formData); 
+        await axios.post('https://vixafx-api-1.onrender.com/api/userRegister/send', formData); 
         setRegisterMessage('User registered successfully!')
     } catch (err) {
         console.error(err);

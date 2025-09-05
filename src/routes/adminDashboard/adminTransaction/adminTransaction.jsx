@@ -19,7 +19,7 @@ const AdminTransaction = () => {
           const fetchUsers = async () => {
     
           try {
-            const res = await axios.get("http://localhost:5000/api/allUsers/users"); 
+            const res = await axios.get("https://vixafx-api-1.onrender.com/api/allUsers/users"); 
             setUsers(res.data);
           } catch (err) {
             console.error("Error fetching users:", err);
@@ -38,7 +38,7 @@ const AdminTransaction = () => {
             e.preventDefault()
 
             try{
-                const res = axios.post("http://localhost:5000/api/transactions/transaction", form)
+                const res = axios.post("https://vixafx-api-1.onrender.com/api/transactions/transaction", form)
                console.log(res) 
                alert("successful Transaction")
             }catch(err){

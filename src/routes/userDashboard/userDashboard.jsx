@@ -39,8 +39,6 @@ const UserDashboard = () => {
         setLoading(false);
       })
       .catch((err) => {
-        // localStorage.removeItem("user-token");
-        // window.location.href = "/userLogin";
         console.log(err)
       });
   }, []);

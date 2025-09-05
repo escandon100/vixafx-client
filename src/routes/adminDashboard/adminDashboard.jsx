@@ -35,7 +35,7 @@ const AdminDashboard = () => {
       }
   
       axios
-        .get('/api/admin/adminAuthentication', {
+        .get('https://vixafx-api-1.onrender.com/api/admin/adminAuthentication', {
           headers: {
             'x-auth-token': token,
           },
@@ -46,9 +46,8 @@ const AdminDashboard = () => {
         
         }
         )
-        .catch(() => {
-          localStorage.removeItem('admin-token');
-          window.location.href = '/adminLogin';
+        .catch((err) => {
+          console.log(err)
         });
     }, []);
 
