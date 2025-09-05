@@ -9,7 +9,7 @@
 
 
     @include responsiveness.small{
-        padding: 20px;
+        padding: 20px 5px;
         gap: 50px;
     }
     @include responsiveness.medium{
@@ -28,7 +28,7 @@
 
             @include responsiveness.small{
                 margin-bottom: 20px;
-                font-size: 20px;
+                font-size: 18px;
                 width: 100%;
                 text-align: center;
             }
@@ -47,6 +47,7 @@
 
             @include responsiveness.small{
                 flex-direction: column;
+                gap: 20px;
             }
 
             @include responsiveness.medium{
@@ -77,8 +78,8 @@
                         width: 30px;
 
                         @include responsiveness.small{
-                            height: 25px;
-                            width: 25px;
+                            height: 20px;
+                            width: 20px;
                         }
                     }
 
@@ -90,7 +91,7 @@
 
 
                     @include responsiveness.small{
-                        font-size: 16px;
+                        font-size: 14px;
                     }
 
                      @include responsiveness.medium{
@@ -105,7 +106,9 @@
                     font-size: 18px;
 
                     @include responsiveness.small{
-                        font-size: 14px;
+                        font-size: 12px;
+                        line-height: 1.6;
+        
                     }
                     @include responsiveness.medium{
                         font-size: 14px;
@@ -127,7 +130,8 @@
             font-size: 24px;
 
             @include responsiveness.small{
-                font-size: 20px;
+                font-size: 18px;
+                margin-bottom: 20px;
             }
 
             @include responsiveness.medium{
@@ -154,6 +158,11 @@
                 gap: 20px;
 
 
+                @include responsiveness.small{
+                    gap: 10px;
+                }
+
+
                 @include responsiveness.medium{
                     width: 45%;
                 }
@@ -170,7 +179,7 @@
                         color: #01a876 ;
 
                         @include responsiveness.small{
-                            font-size: 18px;
+                            font-size: 14px;
                         }
                          @include responsiveness.medium{
                             font-size: 20px;
@@ -178,10 +187,14 @@
                     }
 
 
-                    img{
-                        width: 40px;
-                        height: 40px;
+                      img{
+                        height: 30px;
+                        width: 30px;
 
+                        @include responsiveness.small{
+                            height: 20px;
+                            width: 20px;
+                        }
                     }
                 }
 
@@ -190,7 +203,8 @@
                     font-size: 18px;
 
                     @include responsiveness.small{
-                        font-size: 14px;
+                        font-size: 12px;
+                        line-height: 1.6;
                     }
                      @include responsiveness.medium{
                         font-size: 16px;

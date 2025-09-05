@@ -10,7 +10,7 @@
     position: relative;
 
     @include responsiveness.small{
-        padding-right: 20px;
+        padding: 10px 5px;
     }
 
     @include responsiveness.medium{
@@ -44,7 +44,7 @@
             font-size: 12px;
 
             @include responsiveness.small{
-                padding: 4px 4px;
+                padding: 5px;
                 border-radius: 0px;
                 font-size: 12px;
 
