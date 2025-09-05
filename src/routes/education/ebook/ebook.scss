@@ -127,7 +127,7 @@
         }
 
 
-        button{
+      .button{
             display: flex;
             width: 400px;
             align-self: center;
@@ -189,7 +189,7 @@
                 font-size: 24px;
 
                 @include responsiveness.small{
-                    font-size: 16px;
+                    font-size: 14px;
                 }
                 @include responsiveness.medium{
                     font-size: 20px;

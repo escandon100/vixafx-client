@@ -17,13 +17,13 @@ const Ebook = () => {
         <div className="ebook">
             <div className="main">
                  <h1>LEARN ALL ABOUT FOREX TRADING WITH AN EBOOK FROM TRADERBASE</h1>
-                  <button>
+                  <Link to="/userDashboard" className='button'>
                     <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
                     <div>
                         <h3>START TRADING NOW</h3>
                     </div>
             
-                    </button>
+                    </Link>
 
             </div>
             <div className="side">

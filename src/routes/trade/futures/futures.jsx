@@ -74,13 +74,13 @@ const Futures = () => {
                     
                 </tbody>
             </table>
-            <button>
+            <Link className="button" to="/userDashboard">
                 <h1><FontAwesomeIcon className="icon" icon={faLineChart}/></h1>
                 <div>
                     <h3>START TRADING NOW</h3>
                 </div>
 
-            </button>
+            </Link>
 
             </div>
             <div className="side">

@@ -25,12 +25,12 @@ const Affiliate = () => {
                 <p>You will approach an individual record, which will enable you to screen your guests' exercises statistics. By utilizing these statistics you'll realize precisely the amount you will procure.</p>
                 <p>In case you are keen on our offer, pursue the connection and complete the enlistment procedure. Spot our flags on your site and begin winning with Vixa Fx .</p>
                 <p>Traders can likewise move toward becoming accomplices of the Vixa Fx . Bring your companions and get additional assets and rewards into your trading account!</p>
-                <button>
+                <Link className='button' to="/userDashboard">
                     <h1><FontAwesomeIcon className="icon" icon={faHandshake}/></h1>
                         <div>
                             <h3>BECOME A PARTNER NOW</h3>
                         </div>                   
-                </button>
+                </Link>
             </div>
              <div className="side">
                 <h3>Trading tools</h3>

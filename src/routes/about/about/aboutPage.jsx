@@ -70,13 +70,12 @@ const AboutPage = () => {
                 <p>
                     Vixa Fx trusts the best way to deal with this statement is throughthe foundation of 3 Pillars. The 3 Pillar Concept is based on the possibility that educated trading originates from giving Innovative Trading Platforms, Innovative Trading Tools, and Excellent Trading Conditions.
                 </p>
-                <button>
+                <Link className='button' to="/userDashboard">
                     <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
                     <div>
                         <h3>START TRADING NOW</h3>
                     </div>
-             
-                </button>
+                </Link>
 
             </div>
             <div className="side">
