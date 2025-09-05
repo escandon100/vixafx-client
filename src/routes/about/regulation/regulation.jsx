@@ -14,7 +14,6 @@ const Regulation = () => {
         <div className="regulation">
             <div className="main">
                 <h1>Vixa Fx REGULATION & LICENSE</h1>
-                <h3>Vixa Fx REGULATION & LICENSE</h3>
                 <p>P24O Ltd. holds a Category 3 investment services License no. IS/560000 issued by the US Financial Services Authority (The MFSA).</p>
                 <ol>
                     <li>Regulated by MFSA

@@ -7,7 +7,7 @@
 
   @include responsiveness.small{
     flex-direction: column;
-    padding: 50px 10px;
+    padding: 20px 10px;
   }
     @include responsiveness.medium{
     flex-direction: column;
@@ -39,12 +39,12 @@
       color: #1f2937;
 
       @include responsiveness.small{
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 
     .intro {
-      font-size: 14px;
+      font-size: 12px;
       color: #6b7280;
       margin-bottom: 30px;
 
@@ -58,13 +58,17 @@
       flex-direction: column;
       gap: 20px;
 
+      @include responsiveness.small{
+        gap: 10px;
+      }
+
       label {
         font-weight: 600;
         font-size: 18px;
         color: #374151;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       }
 
@@ -78,7 +82,7 @@
         transition: border 0.2s;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
 
         &:focus {
@@ -108,7 +112,7 @@
         font-size: 18px;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
         
         &:hover {
@@ -116,7 +120,7 @@
           background: #4338ca;
 
           @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -128,7 +132,7 @@
         color: #16a34a; 
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
           margin-top: 5px;
         }
       }
@@ -156,7 +160,7 @@
       color: #1f2937;
 
       @include responsiveness.small{
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -170,13 +174,20 @@
         margin-bottom: 10px;
       }
 
+      .accordionText{
+        
+        @include responsiveness.small{
+            font-size: 14px;
+        }
+      }
+
       .MuiAccordionSummary-root {
         font-weight: 600;
         color: #374151;
         font-size: 18px;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       }
 
@@ -186,7 +197,7 @@
         line-height: 1.6;
 
          @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       }
     }
