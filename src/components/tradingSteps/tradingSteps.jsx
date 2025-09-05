@@ -32,8 +32,8 @@ import "./tradingSteps.scss"
                 </div>
                 
             <div className="registration">
-                <Link className='button registerButton' to="/register">OPEN LIVE ACCOUNT</Link>    
-                <Link className='button loginButton' to="/login">LOGIN ACCOUNT</Link>    
+                <Link className='button registerButton' to="/userRegister">OPEN LIVE ACCOUNT</Link>    
+                <Link className='button loginButton' to="/userLogin">LOGIN ACCOUNT</Link>    
             </div>
          
 

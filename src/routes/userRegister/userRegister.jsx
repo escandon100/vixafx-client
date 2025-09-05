@@ -65,7 +65,7 @@ const UserRegister = () => {
 
     try {
       await axios.post('https://vixafx-api-1.onrender.com/api/email/send', form);
-      setRegistrationMessage("✅ Registration successful. Our system is validating your registration...");
+      setRegistrationMessage("✅ Registration successful");
       
        setForm({
       firstName: '',
@@ -145,7 +145,7 @@ const UserRegister = () => {
           {errors.country && <p className="error">{errors.country}</p>}
 
           <button type='submit'>Register</button>
-          {registrationMessage && <p className={`alert ${registrationMessage.includes("✅") ? "success" : "fail"}`}>{registrationMessage}</p>}
+           <p className={`alert ${registrationMessage.includes("✅") ? "success" : "fail"}`}>{registrationMessage}</p>
         </form>
 
         <p className="login-text">

@@ -55,7 +55,7 @@ const GlobalMarkets = () => {
             <div className="main">
               {renderTab()}
             </div>
-            <Link className='button' to="/register">OPEN LIVE ACCOUNT</Link>    
+            <Link className='button' to="/userRegister">OPEN LIVE ACCOUNT</Link>    
 
         </div>
         <div className="advantages">
