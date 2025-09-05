@@ -30,6 +30,11 @@
       height: 50px;
       width: 100px;
       margin-bottom: 20px;
+
+        @include responsiveness.small{
+        height: 35px;
+        width: 100px;
+      }
     }
 
     .title {

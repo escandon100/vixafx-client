@@ -145,7 +145,7 @@ const UserRegister = () => {
           {errors.country && <p className="error">{errors.country}</p>}
 
           <button type='submit'>Register</button>
-           <p className={`alert ${registrationMessage.includes("✅") ? "success" : "fail"}`}>{registrationMessage}</p>
+           <p className={`${registrationMessage.includes("✅") ? "success" : "fail"}`}>{registrationMessage}</p>
         </form>
 
         <p className="login-text">
