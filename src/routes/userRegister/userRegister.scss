@@ -69,11 +69,20 @@
       gap: 18px;
       text-align: left;
 
+      @include responsiveness.small{
+        gap: 5px;
+      }
+
       label {
         font-size: 15px;
         font-weight: 500;
         margin-bottom: 5px;
         color: #231839;
+
+        @include responsiveness.small{
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
       }
 
       input::-webkit-outer-spin-button,
@@ -91,7 +100,7 @@
 
         @include responsiveness.small{
           width: 100%;
-          font-size: 14px;
+          font-size: 12px;
         }
 
         &:focus {
@@ -120,20 +129,16 @@
 
   
       .success {
-        background: #e8f9f1;
         color: #2a9d8f;
-        border: 1px solid #2a9d8f;
-        font-weight: 500;
+        font-weight: 700;
         margin-top: 15px;
+        font-size: 12px;
       }
       .fail {
-        background: #fdecea;
         color: #e63946;
-        border: 1px solid #e63946;
         margin-top: 15px;
-        font-weight: 500;
-
-
+        font-weight: 700;
+        font-size: 12px;
       }
 
 
