@@ -8,8 +8,6 @@
         border-collapse: separate;
         border-spacing: 0 10px;
 
-      
-
     }
 
     table{
@@ -18,7 +16,7 @@
         font-size: 18px;
 
         @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
         }
 
         @include responsiveness.medium{
