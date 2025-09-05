@@ -24,10 +24,9 @@
 
     try {
         await axios.post('https://vixafx-api-1.onrender.com/api/userRegister/send', formData); 
-        setRegisterMessage('User registered successfully!')
+      setRegisterMessage("✅ Registration successful");
     } catch (err) {
-        console.error(err);
-        setRegisterMessage('Registration failed')
+      setRegisterMessage("❌ Registration failed. Please try again.");
     }
     };
 
@@ -37,7 +36,7 @@
         <div className="adminRegistration">
 
 
-      <form onSubmit={handleRegister}>
+      <form onSubmit={handleRegister} noValidate>
         <h1>Create an Account</h1>
         <div className="names">
           <div className="name">
@@ -108,7 +107,7 @@
 
 
         <button type="submit">Register</button>
-        <p className="green">{registerMessage}</p>
+           <p className={`${registerMessage.includes("✅") ? "success" : "fail"}`}>{registerMessage}</p>
         <p>© Copyright 2025   Trader Base FX   All Rights Reserved.</p>
 
       </form>

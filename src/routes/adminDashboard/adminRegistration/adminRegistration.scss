@@ -13,18 +13,7 @@
 
     @include responsiveness.small{
         gap: 20px;
-    }
-
-    img{
-        height: 100px;
-        width: 400px;
-
-
-        @include responsiveness.small{
-            width: 200px;
-            height: 50px;
-        
-        }
+        padding: 20px;
     }
 
 
@@ -37,23 +26,21 @@
         text-align: center;
         border-radius: 10px;
 
+        @include responsiveness.small{
+            gap: 10px;
+            padding: 20px 10px;
+        }
+
 
         h1{
 
             @include responsiveness.small{
-                font-size: 20px;
+                font-size: 18px;
             }
         }
+
         p{
-            font-size: 16px;
-
-            @include responsiveness.small{
-                font-size: 12px;
-            }
-
-            .link{
-                color :#4081b8;
-            }
+            font-size: 12px;
         }
     
         label{
@@ -62,70 +49,96 @@
 
 
             @include responsiveness.small{
-                font-size: 14px;
+                font-size: 12px;
             }
         }
 
      
 
-        input{
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            font-size: 18px;
-            border-bottom: 2px solid grey;
+       input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
 
-            &:focus{
-                box-shadow: 5px 5px 5px ;
-                outline: none;
-            }
+      input, select {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
 
-            @include responsiveness.small{
-                font-size: 14px;
-            }
-
-
+        @include responsiveness.small{
+          width: 100%;
+          font-size: 12px;
         }
 
-        select{
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px;
-
-              @include responsiveness.small{
-                font-size: 14px;
-            }
+        &:focus {
+          border-color: #4081b8;
+          box-shadow: 0 0 8px rgba(64,129,184,0.2);
+          outline: none;
         }
+      }
+    
         .green{
             color: green;
         }
-        button{
-        background-color: #4081b8;
+       button {
+        margin-top: 10px;
+        background: #4081b8;
         border: none;
-        padding: 15px;
-        border-radius: 5px;
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #2e6a97;
+        }
+      }
+    
+    
+      .names {
+        display: flex;
+        gap: 10px;
+
+        .name {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          @include responsiveness.small{
+            gap: 10px;
+          }
+        }
+      }
+
+
+          .success {
+        color: #2a9d8f;
+        font-weight: 700;
+        margin-top: 15px;
         font-size: 18px;
-        color: #ffff;
 
         @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
         }
+      }
+      .fail {
+        color: #e63946;
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 18px;
 
-    }
-    
-        .names{
-            text-align: left;
-            display: flex;
-            gap: 20px;
-
-            .name{
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
+           @include responsiveness.small{
+            font-size: 12px;
         }
-      
+      }
+
 
 
     }

@@ -2,22 +2,40 @@
 
 
 .adminSubscription{
-    color : white;
+     background-color: #231839;
+    color: black;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    background-color: #231839;
-    height: 100%;
+    gap: 20px;
+
+    @include responsiveness.small{
+        gap: 10px;
+        padding: 20px;
+    }
 
     form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 30px 30px;
         text-align: center;
-        background-color: #fff;
-        color: black;
-        padding: 30px 20px 20px;
-        border-radius: 8px;
-        width: 500px;
+        border-radius: 10px;
+
+        @include responsiveness.small{
+            gap: 10px;
+            padding: 20px 10px;
+        }
+
+        h1{
+
+            @include responsiveness.small{
+                font-size: 18px;
+            }
+        }
 
         
         .field{
@@ -25,38 +43,60 @@
             gap: 20px;
             align-items: center;
             margin-top: 30px;
+
+
+            @include responsiveness.small{
+                gap: 10px;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+
         }
 
 
-
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
+ input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
         -webkit-appearance: none;
+      }
+
+      input, select {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+
+        @include responsiveness.small{
+          width: 100%;
+          font-size: 12px;
         }
 
-        input{
-            padding: 10px;
-            border-radius: 5px;
-            border-bottom : #000;
-            font-size: 18px;
-            width: 60%;
+        &:focus {
+          border-color: #4081b8;
+          box-shadow: 0 0 8px rgba(64,129,184,0.2);
+          outline: none;
         }
-        select{
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px;
-        }
+      }
+    
 
 
+           button {
+        margin-top: 10px;
+        background: #4081b8;
+        border: none;
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s ease;
 
-        button{
-            padding: 15px 25px;
-            border: none;
-            border-radius: 5px;
-            background-color: #0d6efd;
-            color: #fff;
-            margin-top: 20px;
-            font-size: 18px;
+        &:hover {
+          background: #2e6a97;
         }
+      }
+    
     }
 }

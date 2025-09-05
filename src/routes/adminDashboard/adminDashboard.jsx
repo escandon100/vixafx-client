@@ -36,6 +36,8 @@ const AdminDashboard = () => {
   
       axios
         .get('https://vixafx-api-1.onrender.com/api/adminDashboard/adminDashboard', {
+                // .get('http://localhost:5000/api/adminDashboard/adminDashboard', {
+
           headers: {
             'x-auth-token': token,
           },
