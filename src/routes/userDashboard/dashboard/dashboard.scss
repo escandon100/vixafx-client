@@ -25,7 +25,7 @@
       margin-bottom: 10px;
 
       @include responsiveness.small{
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 
@@ -35,7 +35,7 @@
       line-height: 1.6;
 
       @include responsiveness.small{
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
@@ -45,6 +45,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 50px;
+
+    @include responsiveness.small{
+      gap: 20px;
+    }
 
 
     .financeCard {
@@ -60,6 +64,10 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
 
+      @include responsiveness.small{
+        width: 150px;
+      }
+
 
       &:hover {
         transform: translateY(-3px);
@@ -69,16 +77,28 @@
       .icon {
         font-size: 30px;
         color: #22c55e;
+
+        @include responsiveness.small{
+          font-size: 20px;
+        }
       }
 
       h2 {
         font-size: 20px;
         color: #111827;
+
+        @include responsiveness.small{
+          font-size: 14px;
+        }
       }
 
       p {
         font-size: 18px;
         color: #6b7280;
+
+        @include responsiveness.small{
+          font-size: 14px;
+        }
       }
     }
   }
