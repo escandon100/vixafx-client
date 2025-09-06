@@ -58,10 +58,15 @@
       flex-direction: column;
       gap: 20px;
 
+      @include responsiveness.small{
+        gap: 10px;
+      }
+
       label {
         font-weight: 600;
         font-size: 18px;
         color: #374151;
+
 
         @include responsiveness.small{
           font-size: 12px;
@@ -195,7 +200,7 @@
         line-height: 1.6;
 
          @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       }
     }
