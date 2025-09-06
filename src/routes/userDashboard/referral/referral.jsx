@@ -3,7 +3,7 @@ import "./referral.scss";
 import { Copy , Check} from "lucide-react";
 
 const Referral  = () => {
-  const referralLink = "https://tradersbasefx.com/userRegister";
+  const referralLink = "https://vixafx.com/userRegister";
 
     const [copied, setCopied] = useState(false);
   
