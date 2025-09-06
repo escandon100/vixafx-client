@@ -22,7 +22,7 @@
       background: #16a34a;
       display: inline-block;
       padding: 12px 24px;
-      border-radius: 14px;
+      border-radius: 12px;
       font-weight: 600;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
@@ -46,7 +46,7 @@
     margin-bottom: 20px;
 
     @include responsiveness.small{
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
@@ -101,7 +101,7 @@
         padding: 10px;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       } 
     }
@@ -156,7 +156,7 @@
     font-size: 18px;
 
     @include responsiveness.small{
-      font-size: 18px;
+      font-size: 14px;
     }
 
     &.failed{
@@ -170,7 +170,7 @@
     font-size: 18px;
 
     @include responsiveness.small{
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 20px;
     }
   }
@@ -188,7 +188,7 @@
 
     @include responsiveness.small{
       padding: 10px;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     &:hover {
