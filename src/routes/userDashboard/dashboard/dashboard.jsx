@@ -21,11 +21,11 @@ const Dashboard = () => {
 
 
   const finances = [
-    { icon: faDownload, label: "Deposit", value: finance.deposited || "$0" },
-    { icon: faCoins, label: "Profit", value: finance.profit || "$0" },
-    { icon: faGift, label: "Bonus", value: finance.bonus || "$0" },
-    { icon: faRetweet, label: "Ref. Bonus", value: finance.refBonus || "$0" },
-    { icon: faCoins, label: "Balance", value: finance.balance || "$0" },
+    { icon: faDownload, label: "Deposit", value: finance.deposited || "0" },
+    { icon: faCoins, label: "Profit", value: finance.profit || "0" },
+    { icon: faGift, label: "Bonus", value: finance.bonus || "0" },
+    { icon: faRetweet, label: "Ref. Bonus", value: finance.refBonus || "0" },
+    { icon: faCoins, label: "Balance", value: finance.balance || "0" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Dashboard = () => {
         {finances.map((item, idx) => (
           <div className="financeCard" key={idx}>
             <FontAwesomeIcon className="icon" icon={item.icon} />
-            <h2>{item.value}</h2>
+            <h2>${item.value}</h2>
             <p>{item.label}</p>
           </div>
         ))}
