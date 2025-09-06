@@ -5,6 +5,8 @@
   background: #f9fafb;
   color: #1f2937;
 
+ 
+
 
   .welcomeCard {
     background: #ffffff;
@@ -17,6 +19,7 @@
 
     @include responsiveness.small{
       padding: 20px;
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -47,7 +50,7 @@
     gap: 50px;
 
     @include responsiveness.small{
-      gap: 10px;
+      gap: 15px;
     }
 
 
