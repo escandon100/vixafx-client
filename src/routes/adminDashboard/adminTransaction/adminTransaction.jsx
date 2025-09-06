@@ -13,6 +13,7 @@ const AdminTransaction = () => {
         date : Date
     
     })
+    const [transactionMessage , setTransactionMessage ] = useState("")
 
         useEffect(() => {
     
@@ -39,47 +40,51 @@ const AdminTransaction = () => {
 
             try{
                 const res = axios.post("https://vixafx-api-1.onrender.com/api/transactions/transaction", form)
-               console.log(res) 
-               alert("successful Transaction")
+                 setTransactionMessage("✅ Transaction successful");
             }catch(err){
-                console.log(err)
+                 setTransactionMessage("❌ Transaction failed. Please try again.");
             }
         }
     return(
 
         <div className="adminTransaction">
             <form onSubmit={handleSubmit}>
+            <h1>Manage Transactions</h1>
                 <div className="field">
-                 <label>User </label>
                 <select name="userId" value={form.userId} onChange={handleChange}>
-                    <option value="">---Select user --</option>
+                    <option value="">Select user</option>
                         {users.map((user) => {
                            return  <option key={user._id} value={user._id}>{user.userName} {user.email} </option>
                         })}
                 </select>
               </div>
-                <div className="field">
+              <div className="names">
+                 <div className="name">
                     <label>Type</label>
                     <input  name="type" value={form.type} onChange={handleChange} type="text" />
                 </div>
-                <div className="field">
+                <div className="name">
                     <label>Amount</label>
                     <input name="amount" value={form.amount} onChange={handleChange} type="number" />
                 </div>
-                <div className="field">
+
+              </div>
+               <div className="names">
+                 <div className="name">
                     <label>Status</label>
                     <input name="status" value={form.status} onChange={handleChange} type="text" />
                 </div>
-                <div className="field">
+                <div className="name">
                     <label>Date</label>
                     <input type="datetime-local" name="date" onChange={handleChange} value={form.date}/>
                 </div>
-             
-          
-         
 
+               </div>
 
             <button type="submit">Set Transaction</button>
+     <p className={`${transactionMessage.includes("✅") ? "success" : "fail"}`}>{transactionMessage}</p>
+                                         <p>© Copyright 2025   Vixa FX   All Rights Reserved.</p>
+
         </form>
 
         </div>

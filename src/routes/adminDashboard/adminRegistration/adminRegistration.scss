@@ -21,8 +21,8 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        padding: 20px 30px 30px;
+        gap: 20px;
+        padding: 20px 30px ;
         text-align: center;
         border-radius: 10px;
 
@@ -34,6 +34,8 @@
 
         h1{
 
+          font-size: 22px;
+
             @include responsiveness.small{
                 font-size: 18px;
             }
@@ -41,12 +43,37 @@
 
         p{
             font-size: 12px;
+            color: #666;
+
+            @include responsiveness.small{
+              font-size: 10px;
+            }
+
+            &.success {
+              color: #2a9d8f;
+              font-weight: 700;
+              margin-top: 15px;
+              font-size: 14px;
+
+              @include responsiveness.small{
+                  font-size: 12px;
+              }
+           }
+            &.fail {
+              color: #e63946;
+              margin-top: 10px;
+              font-weight: 700;
+              font-size: 14px;
+
+                @include responsiveness.small{
+                font-size: 10px;
+              }
+            }
         }
     
         label{
-            font-size: 18px;
+            font-size: 14px;
             text-align: left;
-
 
             @include responsiveness.small{
                 font-size: 12px;
@@ -55,7 +82,7 @@
 
      
 
-       input::-webkit-outer-spin-button,
+      input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
         -webkit-appearance: none;
       }
@@ -64,7 +91,7 @@
         padding: 12px;
         border: 1px solid #ddd;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: 14px;
         transition: all 0.3s ease;
         box-sizing: border-box;
 
@@ -79,10 +106,46 @@
           outline: none;
         }
       }
-    
-        .green{
-            color: green;
+
+      .names {
+        display: flex;
+        gap: 10px;
+
+        .name {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          @include responsiveness.small{
+            gap: 5px;
+          }
         }
+      }
+      .password-input {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        input {
+          flex: 1;
+          padding-right: 35px;
+        }
+
+        .toggle-icon {
+          position: absolute;
+          right: 10px;
+          cursor: pointer;
+          color: #666;
+          transition: 0.2s;
+
+          &:hover {
+            color: #4081b8;
+          }
+        }
+      }
+    
+  
        button {
         margin-top: 10px;
         background: #4081b8;
@@ -95,49 +158,21 @@
         cursor: pointer;
         transition: 0.3s ease;
 
+          @include responsiveness.small{
+            font-size: 12px;
+            padding: 10px;
+          }
+
         &:hover {
           background: #2e6a97;
         }
       }
     
     
-      .names {
-        display: flex;
-        gap: 10px;
-
-        .name {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-
-          @include responsiveness.small{
-            gap: 10px;
-          }
-        }
-      }
+    
 
 
-          .success {
-        color: #2a9d8f;
-        font-weight: 700;
-        margin-top: 15px;
-        font-size: 18px;
-
-        @include responsiveness.small{
-            font-size: 12px;
-        }
-      }
-      .fail {
-        color: #e63946;
-        margin-top: 15px;
-        font-weight: 700;
-        font-size: 18px;
-
-           @include responsiveness.small{
-            font-size: 12px;
-        }
-      }
+   
 
 
 

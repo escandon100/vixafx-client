@@ -19,6 +19,8 @@ const AdminSubscription = () => {
 
     )
 
+    const [subscriptionMessage , setSubscriptionMessage] = useState("")
+
     useEffect(() => {
 
       const fetchUsers = async () => {
@@ -43,10 +45,11 @@ const AdminSubscription = () => {
         e.preventDefault()
         try {
           
-          const res = await axios.post("http://localhost:5000/api/subscribe/create", form);
-          alert("successfully set transaction")
+          const res = await axios.post("https://vixafx-api-1.onrender.com/api/subscribe/create", form);
+             setSubscriptionMessage("✅ Subscription successful");
+
         } catch (err) {
-      console.error(err);
+            setSubscriptionMessage("❌ Subscription failed. Please try again.");
     }
 
     }
@@ -57,43 +60,59 @@ const AdminSubscription = () => {
           <form onSubmit={handleSubmit}>
             <h1>Manage Subscriptions</h1>
               <div className="field">
-                 <label>User </label>
                 <select name="userId" value={form.userId} onChange={handleChange}>
-                    <option value="">---Select user --</option>
+                    <option value="">Select user </option>
                         {users.map((user) => {
                            return  <option key={user._id} value={user._id}>{user.userName} {user.email} </option>
                         })}
                 </select>
               </div>
-              <div className="field">
-                <label>Plan </label>
-                <input name="planName" type="text" value={form.planName} onChange={handleChange}/>
-              </div>
-              <div className="field">
-              <label>Amount</label>
+              <div className="names">
+                <div className="name">
+                    <label>Plan </label>
+                  <input name="planName" type="text" value={form.planName} onChange={handleChange}/>
+                </div>
+                <div className="name">
+                    <label>Amount</label>
                 <input type="Number" name="amount" value={form.amount} onChange={handleChange}/>
-              </div>      
-              <div className="field">
-                <label >Profit Percent </label>
-                <input type="Number" name="profitPercent" value={form.profitPercent} onChange={handleChange}/>
-              </div> 
-              <div className="field">
-                <label>Duration </label>
-                <input type="Number" name="duration" value={form.duration} onChange={handleChange}/>
+
+                </div>
               </div>
+              <div className="names">
+                <div className="name">
+                  <label >Profit Percent </label>
+                  <input type="Number" name="profitPercent" value={form.profitPercent} onChange={handleChange}/>
+                </div>
+                <div className="name">
+                    <label>Duration </label>
+                     <input type="Number" name="duration" value={form.duration} onChange={handleChange}/>
+                </div>
+              </div>
+              <div className="names">
+                         <div className="name">
+                   <label>Start Date </label>
+                  <input type="date" name="startDate" onChange={handleChange} value={form.startDate} />
+
+                </div>
+                <div className="name">
+                       <label >End Date </label>
+                  <input type="date" name="endDate" onChange={handleChange} value={form.endDate} id="" />
+
+
+                </div>
+                   
+              </div>
+
               <div className="field">
                 <label>Status </label>
                 <input type="text" name="status" value={form.status} onChange={handleChange} />
               </div>
-              <div className="field">
-                  <label>Start Date </label>
-                  <input type="date" name="startDate" onChange={handleChange} value={form.startDate} />
-              </div>
-              <div className="field">
-                  <label >End Date </label>
-                  <input type="date" name="endDate" onChange={handleChange} value={form.endDate} id="" />
-              </div>
+        
+      
               <button type="submit">Subscribe</button>
+                <p className={`${subscriptionMessage.includes("✅") ? "success" : "fail"}`}>{subscriptionMessage}</p>
+                 <p>© Copyright 2025   Vixa FX   All Rights Reserved.</p>
+
              </form>
           </div>
            

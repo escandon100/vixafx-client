@@ -2,7 +2,7 @@
 
 
 .adminSubscription{
-     background-color: #231839;
+    background-color: #231839;
     color: black;
     height: 100vh;
     display: flex;
@@ -12,7 +12,7 @@
     gap: 20px;
 
     @include responsiveness.small{
-        gap: 10px;
+        gap: 20px;
         padding: 20px;
     }
 
@@ -20,8 +20,8 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        padding: 20px 30px 30px;
+        gap: 20px;
+        padding: 20px ;
         text-align: center;
         border-radius: 10px;
 
@@ -31,45 +31,69 @@
         }
 
         h1{
-
+          font-size: 22px;
             @include responsiveness.small{
                 font-size: 18px;
             }
         }
 
-        
-        .field{
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-top: 30px;
+      P{
+        font-size: 12px;
+        color: #666;
 
+          @include responsiveness.small{
+            font-size: 10px;
+          }
+        
+        &.success {
+        color: #2a9d8f;
+        font-weight: 700;
+        margin-top: 15px;
+        font-size: 14px;
+
+          @include responsiveness.small{
+              font-size: 12px;
+          }
+        }
+        &.fail {
+          color: #e63946;
+          margin-top: 15px;
+          font-weight: 700;
+          font-size: 14px;
 
             @include responsiveness.small{
-                gap: 10px;
-                margin-top: 10px;
-                font-size: 12px;
-            }
-
+              font-size: 12px;
+          }
+        }
         }
 
+        label{
+          font-size: 14px;
+          text-align: left;
 
- input::-webkit-outer-spin-button,
+
+          @include responsiveness.small{
+              font-size: 12px;
+          }
+        }
+      input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
         -webkit-appearance: none;
       }
+
 
       input, select {
         padding: 12px;
         border: 1px solid #ddd;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: 14px;
         transition: all 0.3s ease;
         box-sizing: border-box;
 
         @include responsiveness.small{
           width: 100%;
           font-size: 12px;
+          padding: 10px;
         }
 
         &:focus {
@@ -78,25 +102,68 @@
           outline: none;
         }
       }
+
+        
+    .names {
+        display: flex;
+        gap: 10px;
+
+        .name {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          @include responsiveness.small{
+            gap: 10px;
+          }
+        }
+      }
+
+      .field{
+         display: flex;
+         align-items: center;
+         gap:10px;
+         width: 100%;
+
+         & input{
+          width: 100%;
+         }
+         & select{
+          width: 100% ;
+         }
+        
+      }
+
+
+
     
 
 
-           button {
-        margin-top: 10px;
-        background: #4081b8;
-        border: none;
-        padding: 14px;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        transition: 0.3s ease;
+        button {
+          margin-top: 10px;
+          background: #4081b8;
+          border: none;
+          padding: 14px;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          @include responsiveness.small{
+            font-size: 12px;
+            padding: 10px;
+          }
 
         &:hover {
           background: #2e6a97;
         }
       }
+
+
+
     
     }
 }

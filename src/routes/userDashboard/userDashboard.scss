@@ -1,18 +1,18 @@
-@use "../../../styles/responsiveness.scss";
+    @use "../../../styles/responsiveness.scss";
 
-.userDashboard {
-  display: flex;
-  width: 100%;
+    .userDashboard {
+      display: flex;
+      width: 100%;
 
-  .navigationMenu {
-    flex: 1;
-    background: black;
-    color: white;
-    height: 100vh;
-    transition: all 0.3s ease;
-    overflow-x: hidden;
-    font-size: 18px;
-  
+    .navigationMenu {
+      flex: 1;
+      background: black;
+      color: white;
+      height: 100vh;
+      transition: all 0.3s ease;
+      overflow-x: hidden;
+      font-size: 18px;
+
     @include responsiveness.small{
       position: fixed;
       left: 0;
@@ -21,37 +21,34 @@
       z-index: 999;
       font-size: 14px;
 
-      &.collapsed {
-        width: 70px;
+    &.collapsed {
+      width: 70px;
 
-            ul li {
+        ul li {
         justify-content: center;
 
-      }
-
+        }
         .label{
-          display: none;
+        display: none;
         }
-      }
-
-      &.expanded {
-        width: 100%;
-
-          .navHeader{
-            display: block;
-            height: 50px;
-            width: 150px;  
-            padding:15px;
-        }
-
-       
-
-        .label{
-          display: block;
-        }
-      }
-      
     }
+
+    &.expanded {
+      width: 100%;
+
+      .navHeader{
+        display: block;
+        height: 35px;
+        width: 100px;  
+        padding:15px;
+      }
+
+      .label{
+        display: block;
+      }
+    }
+
+   }
 
     @include responsiveness.medium{
       position: fixed;
@@ -64,33 +61,27 @@
       &.collapsed {
         width: 70px;
 
-            ul li {
-        justify-content: center;
-
-      }
-
+        ul li {
+          justify-content: center;
+        }
         .label{
           display: none;
         }
       }
-
       &.expanded {
-        width: 50%;
+      width: 50%;
 
-
-        .label{
-          display: block;
-        }
-
-            .navHeader{
-            display: block;
-            height: 50px;
-            width: 200px; 
-            padding: 25px; 
+      .label{
+        display: block;
+      }
+      .navHeader{
+      display: block;
+      width:150px;
+      height: 45px;
+      padding: 25px; 
         }
       }
     } 
-
 
     @include responsiveness.largest{
       flex: 1;
@@ -98,53 +89,51 @@
 
 
     .menuToggle {
-      display: none;
-   
+     display: none;
+
       @include responsiveness.small{
-        display: block;
-        padding: 15px;
-        cursor: pointer;
+      display: block;
+      padding: 15px;
+      cursor: pointer;
 
-        img {
-          width: 28px;
-          height: 28px;
-         }
+      img {
+        width: 28px;
+        height: 28px;
+     }
+    }
+
+
+    @include responsiveness.medium{
+      display: block;
+      padding: 15px;
+      cursor: pointer;
+
+    img {
+      width: 40px;
+      height: 40px;
         }
-         @include responsiveness.medium{
-        display: block;
-        padding: 15px;
-        cursor: pointer;
-
-        img {
-          width: 40px;
-          height: 40px;
-         }
-        }
-      }   
-    
+      }
+    }   
 
 
-  
 
     ul {
-   
       margin: 0;
       padding: 0;
 
-         & .navHeader{
-          display: block;
-          height : 50px;
-          width: 200px;
-          padding: 20px 25px;
+        & .navHeader{
+        display: block;
+        width:150px;
+        height: 45px;
+        padding: 20px 25px;
 
-
-          @include responsiveness.small{
-            display: none;
-          }
-          @include responsiveness.medium{
-            display: none;
-          }
+        @include responsiveness.small{
+          display: none;
         }
+        @include responsiveness.medium{
+          display: none;
+        }
+      }
 
       li {
         display: flex;
@@ -156,16 +145,12 @@
         color: #b5b5b5;
 
         @include responsiveness.small{
-            padding: 20px 15px;
+          padding: 20px 15px;
         }
 
         @include responsiveness.medium{
           padding: 35px;
         }
-
-     
-
-    
 
         .icon{
           height: 20px;
@@ -177,20 +162,19 @@
           }
         }
 
-        .label {
+      .label {
 
-          font-size: 18px;
+      font-size: 18px;
 
-          @include responsiveness.small{
-            font-size: 14px;
-          }
+      @include responsiveness.small{
+        font-size: 14px;
+      }
 
-      
-        }
+      }
 
-        &.activeNav {
-          background: #fff;
-          color: black;
+          &.activeNav {
+            background: #fff;
+            color: black;
 
           .icon {
             color: black;
@@ -199,32 +183,29 @@
       }
     }
 
-  }
-
-  .main {
-    flex: 4;
-    height: 100vh;
-    background-color: #f9fafb;
-    color: #000;
-    overflow-y: auto;
-
-    @include responsiveness.small{
-       margin-left: 70px;
-       flex: 10;
-    } 
-       @include responsiveness.medium{
-       margin-left: 70px;
-       flex: 10;
-    }   
-
-
-
-    @include responsiveness.largest{
-      flex: 6;
     }
 
- 
-  }
+    .main {
+      flex: 4;
+      height: 100vh;
+      background-color: #f9fafb;
+      color: #000;
+      overflow-y: auto;
+
+    @include responsiveness.small{
+      margin-left: 70px;
+      flex: 10;
+    } 
+    @include responsiveness.medium{
+      margin-left: 70px;
+      flex: 10;
+    }   
+      @include responsiveness.largest{
+      flex: 6;
+      }
+
+
+    }
 }
 
 

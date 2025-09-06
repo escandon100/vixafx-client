@@ -17,57 +17,81 @@
         gap: 20px;
         padding: 20px;
     }
+  form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 30px 30px;
+    text-align: center;
+    border-radius: 10px;
 
+    @include responsiveness.small{
+        gap: 10px;
+        padding: 20px 10px;
+    }
 
-
-    form{
-
-         background-color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px 30px 30px;
-        text-align: center;
-        border-radius: 10px;
+    h1{
+      font-size: 22px;
 
         @include responsiveness.small{
-            gap: 10px;
-            padding: 20px 10px;
+            font-size: 18px;
         }
+    }
 
-             
-        .field{
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-top: 30px;
+    p{
+      font-size: 14px;
+        color: #666;
 
-               @include responsiveness.small{
-                gap: 10px;
-                margin-top: 10px;
-                font-size: 12px;
-            }
+      @include responsiveness.small{
+        font-size: 12px;
+      }
+      &.success {
+        color: #2a9d8f;
+        font-weight: 700;
+        margin-top: 15px;
+        font-size: 14px;
+
+        @include responsiveness.small{
+            font-size: 12px;
         }
-         
-        
-        
-   
- input::-webkit-outer-spin-button,
+      }
+      &.fail {
+        color: #e63946;
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 14px;
+
+          @include responsiveness.small{
+            font-size: 12px;
+        }
+      }
+    }
+      label{
+        font-size: 14px;
+        text-align: left;
+
+
+        @include responsiveness.small{
+            font-size: 12px;
+        }
+      }
+      input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
         -webkit-appearance: none;
       }
-
-      input, select {
+        input, select {
         padding: 12px;
         border: 1px solid #ddd;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: 14px;
         transition: all 0.3s ease;
         box-sizing: border-box;
 
         @include responsiveness.small{
           width: 100%;
           font-size: 12px;
+          padding: 10px;
         }
 
         &:focus {
@@ -75,24 +99,64 @@
           box-shadow: 0 0 8px rgba(64,129,184,0.2);
           outline: none;
         }
+      } 
+             
+     .names {
+        display: flex;
+        gap: 10px;
+
+        .name {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          @include responsiveness.small{
+            gap: 5px;
+          }
+        }
       }
+
+      .field{
+         display: flex;
+         align-items: center;
+         gap:10px;
+         width: 100%;
+
+         & input{
+          width: 100%;
+         }
+         & select{
+          width: 100% ;
+         }
+        
+      }
+    }
+  
+      }
+  
     
-            button {
-        margin-top: 10px;
-        background: #4081b8;
-        border: none;
-        padding: 14px;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        transition: 0.3s ease;
+        button {
+          margin-top: 10px;
+          background: #4081b8;
+          border: none;
+          padding: 14px;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          @include responsiveness.small{
+            font-size: 12px;
+            padding: 10px;
+          }
 
         &:hover {
           background: #2e6a97;
         }
       }
+
+     
     
-    }
-}

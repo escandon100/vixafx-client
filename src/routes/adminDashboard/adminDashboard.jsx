@@ -3,24 +3,14 @@ import { Link } from "react-router";
 import { useEffect , useState } from "react";
 import { Outlet } from "react-router";
 import axios from "axios";
-import "./adminDashboard.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faUser,
-  faHeadset,
-  faHistory,
-  faCreditCard,
-  faExchangeAlt,
-  faBox,
-  faUserFriends,
-  faSignOut,
-} from "@fortawesome/free-solid-svg-icons";
+import {faUser,faCreditCard,faUserFriends,faSignOut} from "@fortawesome/free-solid-svg-icons";
+import "./adminDashboard.scss";
+
 
 
 
 const AdminDashboard = () => {
-      const [message, setMessage] = useState('');
       const [activeNav, setActiveNav] = useState();
       const [loading, setLoading] = useState(true);
       const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -36,14 +26,11 @@ const AdminDashboard = () => {
   
       axios
         .get('https://vixafx-api-1.onrender.com/api/adminDashboard/adminDashboard', {
-                // .get('http://localhost:5000/api/adminDashboard/adminDashboard', {
-
           headers: {
             'x-auth-token': token,
           },
         })
         .then((res) => {
-          setMessage(res.data.message)
           setLoading(false)
         
         }
