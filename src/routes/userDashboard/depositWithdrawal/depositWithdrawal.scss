@@ -209,8 +209,6 @@
       text-align: center;
       margin-top: 20px;
 
-  
-
       p {
         display: inline-block;
         background: #e0f7ec;
@@ -245,6 +243,10 @@
       span {
         display: block;
         font-weight: 700;
+
+        @include responsiveness.small{
+          font-size: 14px;
+        }
       }
 
       .address-row {
@@ -261,8 +263,6 @@
           word-break: break-all;
           width: 100%;
 
-
-          
           @include responsiveness.small{
             font-size: 12px;
             padding: 5px;

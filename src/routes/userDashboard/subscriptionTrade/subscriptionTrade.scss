@@ -20,7 +20,7 @@
 
 
       @include responsiveness.small{
-        font-size: 14px;
+        font-size: 12px;
       }
     }
 
@@ -57,7 +57,7 @@
 
 
       @include responsiveness.small{
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
       }
     }
@@ -90,7 +90,7 @@
           font-size: 18px;
 
           @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
           }
         }
 
@@ -100,7 +100,7 @@
           font-weight: 500;
 
           @include responsiveness.small{
-            font-size: 12px;
+            font-size: 10px;
           }
         }
 
