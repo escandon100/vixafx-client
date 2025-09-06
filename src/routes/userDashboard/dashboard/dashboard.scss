@@ -47,7 +47,7 @@
     gap: 50px;
 
     @include responsiveness.small{
-      gap: 20px;
+      gap: 10px;
     }
 
 
@@ -66,6 +66,7 @@
 
       @include responsiveness.small{
         width: 100px;
+        padding: 15px 10px;
       }
 
 
