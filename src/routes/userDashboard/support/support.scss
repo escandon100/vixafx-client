@@ -39,7 +39,7 @@
       color: #1f2937;
 
       @include responsiveness.small{
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 
@@ -49,7 +49,7 @@
       margin-bottom: 30px;
 
       @include responsiveness.small{
-        font-size: 12px;
+        font-size: 10px;
       }
     }
 
@@ -64,7 +64,7 @@
         color: #374151;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       }
 
@@ -78,7 +78,7 @@
         transition: border 0.2s;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
 
         &:focus {
@@ -108,7 +108,8 @@
         font-size: 18px;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
+          padding: 10px;
         }
         
         &:hover {
@@ -116,7 +117,7 @@
           background: #4338ca;
 
           @include responsiveness.small{
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -128,7 +129,7 @@
         color: #16a34a; 
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
           margin-top: 5px;
         }
       }
@@ -156,7 +157,7 @@
       color: #1f2937;
 
       @include responsiveness.small{
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -170,13 +171,21 @@
         margin-bottom: 10px;
       }
 
+      .accordionText{
+        font-size: 16px;
+
+        @include responsiveness.small{
+          font-size: 14px;
+        }
+      }
+
       .MuiAccordionSummary-root {
         font-weight: 600;
         color: #374151;
         font-size: 18px;
 
         @include responsiveness.small{
-          font-size: 14px;
+          font-size: 12px;
         }
       }
 

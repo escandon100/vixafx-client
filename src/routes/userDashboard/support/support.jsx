@@ -82,7 +82,7 @@ const Support = () => {
         <h2>Frequently Asked Questions</h2>
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>What is Vixa FX?</Typography>
+            <Typography className="accordionText">What is Vixa FX?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             Vixa FX is a modern online investment platform offering
@@ -94,7 +94,7 @@ const Support = () => {
 
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>How do I open an account?</Typography>
+            <Typography className="accordionText">How do I open an account?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             Register with your email and password. Once verified, you’ll gain
@@ -105,7 +105,7 @@ const Support = () => {
 
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>What packages are available?</Typography>
+            <Typography className="accordionText">What packages are available?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             We offer Weekly, Monthly, and Premium investment packages, each with
@@ -116,7 +116,7 @@ const Support = () => {
 
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>How do I deposit and withdraw funds?</Typography>
+            <Typography className="accordionText">How do I deposit and withdraw funds?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             Navigate to the Deposit/Withdrawal section, choose your method, and
@@ -127,7 +127,7 @@ const Support = () => {
 
         <Accordion className="accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Is Vixa FX regulated?</Typography>
+            <Typography className="accordionText">Is Vixa FX regulated?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             Yes, Vixa FX is a legitimate platform that simulates
