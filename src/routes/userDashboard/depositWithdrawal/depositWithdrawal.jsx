@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Copy, Check } from "lucide-react";  // 👈 Lucide icons
+import { Copy, Check } from "lucide-react";  
 import "./depositWithdrawal.scss";
 
 const DepositWithdrawal = () => {
@@ -10,7 +10,7 @@ const DepositWithdrawal = () => {
   const [btcAddress, setBtcAddress] = useState("");
   const [copied, setCopied] = useState(false);
 
-  const WALLET_ADDRESS = "bc1qexampleyourbtcaddress12345";
+  const WALLET_ADDRESS = "bc1q2hq5sf6f9wfxg7jqm6mruwdpuymmcs7xw7gmvp";
 
   const paymentOptions = [
     {name : "Bitcoin" , img: "/bitcoin.png"},
